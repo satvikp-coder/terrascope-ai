@@ -1,3 +1,13 @@
+## Latest locality/reference verification — October 18, 2026 IST
+
+Continued from verified public main11c8d89. Read section0 of [ENVIRONMENTAL_EVENT_SELECTION](research/ENVIRONMENTAL_EVENT_SELECTION.md), which supersedes earlier missing-map/missing-location findings. Exact NWDP boundary matches for Bihubor Grant292859, Maduri Gohain292892 and Moran Gaon292847 are inside both July NISAR and both identified Sentinel-1 footprints. Bihubor/Moran lie south of the old discovery box. Provisional Bihubor research envelope: POLYGON((94.78 26.80,94.80 26.80,94.80 26.84,94.78 26.84,94.78 26.80)), WGS84. This is not a flood boundary or finalized AOI.
+
+Three official Teok damage points were verified against July23 page17; one conflicts with the similarly named village polygon. Do not repair that mismatch by guessing. Bhuvan lists Assam July22/23 inundation WMS layers whose extents include both candidates, but acquisition provenance/local inundation and analytical-use rights remain unresolved. GetCapabilities failed with an out-of-sync configuration error; no imagery requested. Nazira remains the provisional lead for reference overlap; Teok has stronger dated point evidence. CONDITIONALLY_READY and July CATALOG_MATCHED_NOT_RASTER_VALIDATED remain unchanged.
+
+Downloaded only public NWDP vector ZIP15,212,855bytes after inspecting Other(Open) metadata/attribution policy;26,662 features, sourceEPSG7755 transformed to4326 for catalog-geometry checks. No expanded vector duplicate or vector geometry committed. Raw evidence/results are E:/TerraScope_AI/03_Documentation/location_verification_20261018; lightweight documentation only goes to Git. Originals unchanged; no new satellite imagery, classification or competition component. No external contact sent. Organizer reuse/start permission and explicit build authorization still required.
+
+Next action: verify actual dated inundation within Bihubor envelope and NRSC reference provenance/usage, then obtain separate permission for July pixel QA. Preserve Majuli and Teok alternatives. Final verified commit is recorded externally in 00_Project_Management/handoff/last_verified_commit.txt after push.
+
 ## AU404 environmental-event research update — 2026-10-18
 
 Team: AU404; project: TerraScope AI. Starting verified main730eb95; public repository. Read [environmental event selection](research/ENVIRONMENTAL_EVENT_SELECTION.md) and [compact source/catalog evidence](research/event_selection_metadata.json) before selecting any new AOI. This section supersedes any assumption that August15–27 Majuli is a verified flood case; it does not replace preserved measurements or finalize a new region.

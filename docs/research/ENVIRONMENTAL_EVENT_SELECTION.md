@@ -1,5 +1,92 @@
 # AU404 / TerraScope AI — environmental event selection
 
+## 0. Superseding locality and reference verification — October 18, 2026 IST
+
+**Recommendation: continue with Nazira as the provisional lead, focusing the next evidence check on Bihubor Grant. Preserve Majuli as fallback. Do not finalize a flood AOI or download imagery yet.** Starting commit: `11c8d89c414969f50678dcb645753ca27bc37daa`. The following findings supersede earlier statements that no July official map listing or affected-locality geometry had been found. Earlier scores remain historical research-priority judgments, not recalculated confidence or validation metrics.
+
+### A. Official affected locations and boundary matching
+
+Re-read the existing July22 and July23 [DRIMS exports](https://sdrf.assam.gov.in/dfr/download?type=flood), including visually checking July23 pages17–18 against extracted text. The reports give circle totals, not a complete coded list of all 126 Nazira / 70 Teok affected villages. July23 page18 names Bihubor Grant in the village column of power-damage records; its location narrative also names Moran Gaon and Maduri Gohain. Damage totals span several places and cannot be assigned to each village. Coordinates and individual damage times are absent for those Nazira entries. July22's Nazira fishery damage entry lacks village/coordinate details. The reports' previously recorded retrospective export timestamps remain relevant.
+
+The [NWDP Assam boundary resource](https://nwdp.nwic.gov.in/dataset/village-boundary/resource/bd9571d5-4874-4cfd-a78e-9d1fdddbe0b2) identifies Survey of India as source. Its public CKAN metadata lists the GeoJSON ZIP at **15,212,855 bytes**, KMZ26,375,735 and SHP ZIP10,016,295. GeoJSON was selected for existing-tool readability, downloaded once with a20MB cap, and retained outside Git. No public datastore subset was advertised (`datastore_active=false`). The ZIP contains one107,673,533-byte GeoJSON, read in memory without writing an expanded duplicate;26,662 features. Resource update: May1,2025, not a demonstrated survey date or2026 administrative revision.
+
+License metadata says **Other (Open)** without a specific license URL. [NWDP copyright policy](https://nwdp.nwic.gov.in/footer/copyrightPolicy) permits attributed, accurate reuse with exceptions for third-party copyright. This supports local public-data inspection; no blanket Apache-2.0 relicensing or redistribution rights are asserted. Only findings and identifiers are committed, not boundary geometry. The resource declares **EPSG:7755, WGS84 / India NSF LCC**, not longitude/latitude despite its GeoJSON extension. Existing QGIS GDAL/PROJ transformed the selected boundaries to EPSG:4326 with explicit traditional XY axis order. No imagery was processed. All11 selected geometries were valid. `vlcode` below is the resource's identifier, not independently verified as a current LGD identifier.
+
+| Report locality | Boundary name / vlcode | Match evidence and limits |
+|---|---|---|
+| Bihubor Grant, Nazira | Bihubor Grant /292859 | Exact name plus Nazira/Sivasagar administrative match. VERIFIED administrative location associated with a reported damage entry; actual inundated portion/time unknown |
+| Maduri Gohain, Nazira | Maduri Gohain /292892 | Exact name plus circle/district match; named in multi-location damage narrative, not individually georeferenced damage |
+| Moran Gaon, Nazira | Moran Gaon /292847 | Same bounded evidence as Maduri; not proof whole village flooded |
+| Nazira Town | Nazira /249907 | Town-level corroboration; urban feature, not a village flood polygon |
+| Santak grant | Sontok Grant /292910 | Plausible spelling variant, not an exact official code crosswalk; PARTIALLY_VERIFIED, excluded from the primary AOI rationale |
+| Nepali Khuti Santak Bihubor | No unambiguous feature identified | Do not assign the locality to Bihubor Grant or Sontok Grant merely from similar names |
+| Mahara, Duwara chuk, Teok | Point94.391699,26.826974 falls in Mahera Gaon /293784 | Reported bund damage dated July20; coordinate containment verified, spelling equivalence remains qualified |
+| Mudoijan Bharalua, Teok | Point94.407011,26.807332 falls in Nowbaisa Gaon Nawboisha Gaon /293817 | July20 damage. Does **not** fall in similarly named Mudoijan Bhorulua Gaon /293882; unresolved report/boundary/name discrepancy, no silent correction |
+| Halua Pathar, Teok | Point94.468314,26.783638 falls in Holuwa Gaon /293848 | July18 damage, before the commonly cited July19 wave onset; point association verified, alias and inundation timing unresolved |
+
+These three Teok coordinates are official reported **infrastructure-damage points**, not flood-polygon vertices. Their datum/positional accuracy is not specified in DRIMS; interpreting decimal lon/lat as WGS84 is an explicit working assumption, not survey-grade verification. The Halua point is outside the old Teok discovery box's eastern edge. A [PIB July21 release](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2287324&lang=2&reg=48) directly documents flood rescue at Seleng Ghat near Seleng Tea Estate following a July19 alert. NWDP has Seleng Grant293853 and Seleng Gaon293864, but the exact rescue site cannot be assigned to either from that narrative alone. Historical hazard atlases and relief-camp designation lists are not July2026 inundation evidence.
+
+### B. Coverage and a compact provisional research AOI
+
+Reused existing ASF footprints; no new catalog/image acquisition was needed. Polygon containment checks establish that **Bihubor Grant, Maduri Gohain, Moran Gaon, Nazira town and Sontok Grant are wholly within both selected July NISAR footprints and both existing Sentinel-1D footprints**. The Teok damage points and their containing village polygons are within both NISAR footprints but outside both identified Sentinel-1 footprints. This is catalog geometry, not valid-pixel coverage or physical co-registration.
+
+Bihubor Grant's transformed bounds are approximately94.781461–94.796100E,26.805775–26.836192N. Bihubor and Moran lie south of the original Nazira discovery box (south edge26.84); the old box must not stand in for all affected Nazira localities.
+
+**PROVISIONAL Bihubor research envelope**, EPSG:4326, longitude then latitude:
+
+```text
+POLYGON((94.78 26.80,94.80 26.80,94.80 26.84,94.78 26.84,94.78 26.80))
+```
+
+This rounded envelope encloses the named Bihubor administrative polygon and is wholly contained in both NISAR and both Sentinel-1 catalog footprints. It is a defensible **location-screening envelope**, not a measured inundation boundary, final study area or evidence that all enclosed land flooded. The actual damaged infrastructure could occupy a small part or extend through other named villages. Do not use this rectangle as a positive flood label. Final selection remains conditional on independently dated inundation geography and pixel QA.
+
+### C. ISRO reference availability: important positive finding, with limits
+
+The supplied [Bhuvan flood viewer](https://bhuvan-app1.nrsc.gov.in/disaster/usrtasks/flood/flood.php?uname=empty) explicitly associates the following entries with **ASSAM-2026**. Same-date Bihar, Gujarat and Maharashtra entries were not substituted. Public viewer metadata was inspected, not map images.
+
+| Assam WMS layer | Display date/time label | Viewer extent, west/south/east/north |
+|---|---|---|
+| `flood:as_2026_22_07_18` | July22,2026,18Hr |93.64861,26.347569,96.017876,27.971476 |
+| `flood:as_2026_23_07_18` | July23,2026,18Hr |92.793274,25.530321,96.017876,27.971476 |
+
+Both extents include Nazira, Teok and the proposed envelope. **Official inundation-map listings are available; actual mapped inundation at our sites remains unverified.** They are WMS visualization layers; downloadable analytical vector/raster format, resolution, sensor, acquisition instant, timezone, classification semantics and pixel validity were not established. Do not equate the18Hr label with a verified satellite acquisition. Public WMS GetCapabilities returned HTTP400, reporting out-of-sync GeoServer/GWC configuration. The viewer-linked Assam2026 metadata page returned an empty table; its webservice information page supplied generic/incomplete values. No repeated failing requests, invented service endpoint, GetMap, tile, feature extraction or imagery download followed.
+
+[Bhuvan terms](https://bhuvan.nrsc.gov.in/terms.php) restrict copying/derivative use and redistribution; public viewing is not an open-data license. Verify permitted analytical use and source provenance with NRSC before importing this reference into future processing or publishing it. A satellite-derived ISRO map may share Sentinel-1 inputs and would then not be an independent sensor validation source. This discovery improves reference prospects, but does not close the flood-validation gate.
+
+### D. Reference timing and scientific suitability
+
+Preferred NISAR starts remain July10 **23:05:29Z** and July22 **23:05:28Z**, track040/frame015, exact identifiers retained in section6 and the existing catalog JSON. Local dates are July11 and July23 at04:35IST. The July22 pair member is an active-wave candidate, not proof of peak inundation at Bihubor. No July raster was downloaded or validated.
+
+| Reference | Time difference from corresponding NISAR start | Suitability |
+|---|---|---|
+| Sentinel-1D July10 11:39:57Z /July22 11:39:58Z | Earlier by11h25m32s /11h25m30s | Both fully cover proposed Bihubor envelope. C-band VV/VH versus L-band HH/HV; separate geometry, resolution, radiometry and geolocation. Water can change materially within11h; corroboration, not ground truth |
+| HLS L30 July23 04:10:47.729Z | Later by5h05m19.729s |30m optical product; catalog tile cloud97–100%, actual AOI clear-pixel coverage untested |
+| HLS S30 July23 catalog starts04:31:08.167Z /04:31:22.696Z | Later by5h25m40.167s /5h25m54.696s | Tile cloud95/89%; exact optical exposure time must be checked from product metadata, as granule ID timestamps differ from CMR start values |
+| HLS S30 July21 catalog starts04:30:52.051Z /04:31:06.595Z | Earlier by42h34m35.949s /42h34m21.405s | Tile cloud55/66%, further temporal mismatch; tile cloud is not AOI cloud or proof of unusability |
+| DRIMS July23 /CWC context | Daily report; previous report references08:00 bulletin,3h24m32s after local NISAR start if same-dayIST | Administrative impacts/gauge context, no synchronous inundation footprint; export dates differ from as-of dates |
+
+Do not score agreement between HLS and its source Landsat/Sentinel-2 as independent validation. Quantitative comparisons later require pixel QA, physical registration, water-stage context and reference error estimates. The July NISAR identification-group QA failure remains unexplained at component level; joint40MHz banding and noise/calibration uncertainties remain. Finite pixels and catalog footprint agreement do not resolve them.
+
+### E. Final answers and next evidence gate
+
+1. **Geographically verified:** exact administrative matches for Bihubor Grant, Maduri Gohain and Moran Gaon; reported Teok damage coordinates located as above. No complete affected-village list or event polygon established. Names/points/administrative extents have different evidential meanings.
+2. **NISAR coverage:** both July footprints contain these locations; pixel quality remains unknown.
+3. **Official July22–23 map:** yes, Assam viewer listings with relevant geographic extents; no verified site-level inundation content, acquisition provenance or analytical reuse permission.
+4. **Defensible AOI:** yes for provisional Bihubor location screening; no for a validated flood extent or final competition dataset.
+5. **Nazira versus Teok:** Nazira retains a practical reference-coverage advantage at Bihubor. Teok has stronger coordinate-specific dated damage evidence and a direct government rescue account. Nazira is not proven scientifically superior overall; do not reuse earlier scores as newly measured certainty.
+6. **July pair:** still suitable catalog candidates, status **CATALOG_MATCHED_NOT_RASTER_VALIDATED**; existing project assessment **CONDITIONALLY_READY** unchanged.
+7. **Minimum missing evidence:** confirm a dated inundated portion within the Bihubor envelope near July22–23 (plus reference provenance/permission), then separately authorize minimal July pixel QA. Distinguish standing floodwater from damage/sediment after recession. Baseline dryness remains unverified.
+8. **Decision:** continue focused Nazira/Bihubor research; preserve Majuli, keep Teok viable. Do not restart a broad location hunt or download imagery merely because boundaries are now known.
+
+Next permitted step: use the official viewer when functioning or prepare a concise NRSC/DDMA request identifying the two layer names, Bihubor code292859 and envelope, asking for acquisition times/sensor, actual local inundation and permitted analytical reference use. **No request was sent.** Obtain Ahmedabad reuse/start clarification separately. Source imagery and pre-event utilities remain isolated from submission until permitted; no competition implementation, classification, flood area estimate or application was produced.
+
+### F. Reproducibility and storage
+
+All new source access: October18,2026 IST. Public portal HTML, service-error receipt, vector ZIP, boundary/point containment results and local renders of the already-downloaded report pages are under `E:/TerraScope_AI/03_Documentation/location_verification_20261018`. Existing report hashes and exact scenes remain in `event_selection_metadata.json` and external provenance records. New local receipt records file sizes/SHA256. Only these documentation updates enter Git. No NISAR, Sentinel-1, HLS or Bhuvan imagery downloaded; original rasters unchanged. The15.2MB public vector archive is the only new dataset; no heavy dependency installed. Source boundary records were inspected locally, not silently corrected or redistributed. Boundary vintage, village aliases and DRIMS coordinate accuracy remain limitations.
+
+---
+
+
 **Research date:** 2026-10-18 IST. **Starting commit:** 730eb95f4db2cc8ba7f24514dfd4aa8beaaf5536, clean main; repository public. Team name is **AU404**; TerraScope AI is the project. This report adds source/metadata research, not a flood result, final AOI, processing method or application.
 
 ## 1. Executive summary
