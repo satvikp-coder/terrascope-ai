@@ -24,7 +24,7 @@ Official starting points: [Space Apps 2026](https://www.spaceappschallenge.org/2
 
 ## October 18 preparation review and project index
 
-**Repository stays PRIVATE.** Existing personal-email history is not approved for public exposure. No rewrite or visibility change is authorized.
+**Repository is PUBLIC following the owner's October 18 instruction.** Five historical personal-author-email commits are retained. No history rewrite or force push occurred.
 
 The [global FAQ](https://www.spaceappschallenge.org/resources/participant-faqs/) now independently confirms the pre-event challenge-work prohibition. Existing project-specific crops, masks and external utilities are frozen for organizer review; eligibility for submission reuse is **not established**. Do not execute the reproduction guides or copy prepared utilities into submission work until the boundary is clarified. Ahmedabad build start is unverified; submission opening does not authorize building.
 

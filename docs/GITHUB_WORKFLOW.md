@@ -1,6 +1,6 @@
 # Lightweight GitHub workflow
 
-Keep this repository PRIVATE. Main holds reviewed preparation documentation; use short documentation branches for multi-person changes and a small PR when useful. The owner has authorized safe documentation updates to main. No branch protection, collaborator access or paid integration is changed automatically.
+Repository is PUBLIC following the owner's explicit October 18 instruction; do not expose any new secrets or private personal information. Main holds reviewed preparation documentation; use short documentation branches for multi-person changes and a small PR when useful. The owner has authorized safe documentation updates to main. No branch protection, collaborator access or paid integration is changed automatically.
 
 1. Read HANDOFF/status and rules before work; identify task owner and permission category.
 2. Pull/review current state without discarding local work. Use noreply Git identity.

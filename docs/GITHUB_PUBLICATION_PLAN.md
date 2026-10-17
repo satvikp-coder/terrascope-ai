@@ -1,3 +1,11 @@
+## Confirmed publication and preparation verification ? October 18
+
+The owner subsequently instructed public visibility. After a clean full-history audit of 7 commits / 117 objects / 87 blobs, safe preparation commit 597695330ed353a7ceb847650cb43af773c4321a was pushed and verified against GitHub main. The repository was changed to PUBLIC via GitHub CLI. Anonymous unauthenticated GitHub API and web-page requests both returned HTTP 200; API reports private=false and the same main SHA. Existing five personal-author-email commits remain; no history rewrite/force push occurred.
+
+All 54 lightweight files / 71 relative links passed the local checks; three original raster checksums/sizes remain unchanged. No imagery, secret, application code or heavy dependencies were added. Two milestones/five planning issues exist. Current docs remain preparation only and CONDITIONALLY_READY remains unchanged. A final documentation receipt commit follows; its SHA and independent verification are stored outside Git in E:/TerraScope_AI/00_Project_Management/handoff/last_verified_commit.txt and publication_receipt.json.
+
+Remaining blockers: official Ahmedabad start/reuse ruling, actual roster/registration confirmation, dated event/reference evidence, October28 full requirements and November13 guides. No organizer was contacted. The public visibility instruction does not authorize competition implementation.
+
 # GitHub publication and history privacy plan
 
 2026-10-18 baseline: private main at caeee8bf4ebffeae712c902fa703182dc4f0eb3a. Existing Apache-2.0, NOTICE and attribution retained. Five original commits carry a personal author/committer email; values are intentionally not repeated. Future commits use a GitHub noreply identity. No visibility/history change is authorized.

@@ -17,8 +17,8 @@ Status describes evidence, not just document existence. Overall scientific asses
 | Technical skills | IN_PROGRESS | Prioritized checklist; no verified teammate proficiency assessment |
 | Future architecture | CONDITIONALLY_COMPLETE | Options/trade-offs documented; full challenge and team capability may change choice |
 | Future testing | CONDITIONALLY_COMPLETE | Evaluation/acceptance plan exists; actual tests deferred until event |
-| GitHub security | CONDITIONALLY_COMPLETE | Baseline full-history audit plus refresh planned/completed with final push; historical private email remains |
-| Open-source compliance | CONDITIONALLY_COMPLETE | Apache-2.0/NOTICE/attribution present; future dependencies/content and owner release consent still needed |
+| GitHub security | CONDITIONALLY_COMPLETE | 7-commit full-history audit passed; owner-authorized PUBLIC visibility verified anonymously; five personal-email commits retained |
+| Open-source compliance | CONDITIONALLY_COMPLETE | Apache-2.0/NOTICE/attribution present; owner publication authorized; future dependencies/content rights still need review |
 | Storage readiness | COMPLETE | Correct E: USB NTFS capacity/free space verified; originals preserved, no imagery duplicated |
 | Future implementation backlog | NOT_PERMITTED_YET | Prioritized gated work documented; no algorithm/app/model implementation |
 | Submission planning | CONDITIONALLY_COMPLETE | Provisional checklist/timeline; November13 guide and Ahmedabad schedule still needed |
