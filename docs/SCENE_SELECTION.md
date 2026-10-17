@@ -21,3 +21,7 @@ Actual-resource probes: unauthenticated HEAD redirected to NASA's CloudFront del
 Sources: https://nisar-docs.asf.alaska.edu/asf-search/ ; https://cmr.earthdata.nasa.gov/search/granules.json ; https://nisar-docs.asf.alaska.edu/gcov/
 
 Authenticated follow-up supersedes the unauthenticated probe below: HTTP 206 succeeded after the private .netrc separator fix, and GDAL accessed both scenes using cookie persistence. See REMOTE_EXPLORATION.md for measured results.
+
+## QA assessment update
+
+**CONDITIONALLY_READY**: both identification FAILs now explained by reproduced v17.0.0 errors (instrument-name spelling convention and placeholder observation modes). See QA_INVESTIGATION.md. The pair has matching grids, acquisition configuration and processing versions, but full quality masking, noise/geometry/co-registration assessment and mode clarification are still required. Original rasters remain unchanged.

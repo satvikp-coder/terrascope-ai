@@ -1,6 +1,6 @@
 # Authoritative preparation status
 
-Updated 2026-10-17T20:00:39.897832+00:00. PREPARATION ONLY; competition solution unstarted.
+Updated 2026-10-17T20:23:07.314767+00:00. PREPARATION ONLY; competition solution unstarted.
 
 ## Completed and verified
 
@@ -19,14 +19,22 @@ Updated 2026-10-17T20:00:39.897832+00:00. PREPARATION ONLY; competition solution
 - Both product containers and frequency-A HHHH inspected with GDAL 3.13.3. CRS/grid/type/units/NoData agree; see REMOTE_EXPLORATION.md.
 - Tiny sample successfully cropped and validated before AOI processing. Raster validity and exact sizes are in metadata/raster_validation.json; file SHA256 and all data artifacts are in metadata/artifact_manifest.json.
 - Native-grid AOI compatibility: True. Quality masking and independent scientific validation remain outstanding; no flood result is claimed.
-- Both official QA summaries contain an identification-group FAIL, despite passing grid/calibration-LUT checks. Exact failed identification test remains unresolved; see REMOTE_EXPLORATION.md. Scientific suitability is conditional.
+- Both official QA summaries contain an identification-group FAIL, despite passing grid/calibration-LUT checks. The exact component errors have now been reproduced; see QA_INVESTIGATION.md. Scientific suitability remains conditional.
 - Imagery storage: external E:/TerraScope_AI/01_NASA_Data_Exploration/exploratory_samples and cropped_GCOV only. Full HDF5 downloads: none. No competition app or detection system built.
 - Last previously verified commit: e5544c959a1801143f42b252e59d8dab3ab21bbe. Final verified remote hash is stored outside Git in 00_Project_Management/handoff/last_verified_commit.txt after push; private repository https://github.com/satvikp-coder/terrascope-ai, main.
 
 ## Remaining restrictions and next actions
 
 1. Review pixel-quality masks, calibration/geometry caveats and small QA summaries before future quantitative interpretation. No change analysis yet.
-   Resolve both products' identification-group QA failure with official documentation or ASF support before claiming full scientific readiness.
+   Two component causes reproduced: instrumentName naming mismatch and placeholder observation modes. Official clarification and complete quality screening remain required.
 2. Verify exact polygon AOI handling before area statistics; current crops are enclosing native-grid windows.
 3. Identify participant's local event and verify official start/timezone; recheck detailed challenge resources.
 4. Continue permitted research only. Competition development requires verified official start AND exact user authorization START TERRASCOPE AI HACKATHON BUILD.
+
+## QA investigation checkpoint — 2026-10-17T20:22:47.340782+00:00
+
+Dataset classification: **CONDITIONALLY_READY**. Exact v17.0.0 identification checks reproduced two ERRORs per scene, with matching causes: instrumentName LSAR versus validator L-SAR/S-SAR, and listOfObservationModes (NOT SPECIFIED). No other ERROR from this function. See QA_INVESTIGATION.md for severity, limits, exact references and conditions.
+
+Direct HDF5 metadata confirms RTC linear gamma0, no noise correction, no shadow masking and no valid-subsample masking. Sparse GDAL quality inspection outcomes are recorded under metadata/qa_investigation outside Git; complete AOI quality is not established. Both original crop SHA256 values unchanged. Exact AOI is fully covered; 251,466 enclosing-crop pixel centres lie outside it.
+
+No full HDF5, new imagery files, detection algorithm or competition application. Last previously verified commit 7f483c7; final verified push hash remains in external 00_Project_Management/handoff/last_verified_commit.txt. Next scientific work: authoritative mode clarification, complete quality/geometry review, noise/calibration/co-registration assessment and independent validation.

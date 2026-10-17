@@ -5,3 +5,11 @@ Backscatter change is not proof of flooding. Geometry, incidence angle, vegetati
 Future work must inspect radiometric conventions and units, calibration/quality flags, valid-data masks, co-registration and grid consistency. Preserve source measurements; keep derived visualization separate. Provisional maturity may affect results.
 
 Potential future validation sources to investigate: temporally matched Sentinel-1 observations, cloud-free optical water evidence, official flood bulletins/maps and river gauge records. Availability, dates, resolution, licensing and independence must be verified before use. No reference observations have been acquired or validated here.
+
+## Verified product-specific limitations
+
+Both scenes are CONDITIONALLY_READY, not fully QA-passed. QA v17.0.0 rejects the LSAR spelling (expects L-SAR/S-SAR) and the NOT SPECIFIED observation-mode placeholder. The latter leaves detailed acquisition metadata incomplete. No raster-invalidity conclusion follows solely from these errors; do not silently repair source metadata.
+
+Actual flags: noiseCorrectionApplied=False, shadowMaskingApplied=False, validSamplesSubSwathMaskingApplied=False, RTC=True. Finite positive HHHH values therefore require independent quality screening. Mask 0 is invalid/partially focused; 1–5 are fully focused subswaths, 255 fill. Exception mask 0 means no documented anomaly; code 2 is sample slip. Sparse sampled quality results cannot establish whole-AOI validity. Number of looks is not confidence and has no chosen universal cutoff here. Shadow/layover, noise-floor effects and physical coregistration remain unvalidated.
+
+The exact projected AOI lies inside the crops, but 251,466 crop pixel centres lie outside the requested polygon. Use polygon membership before future AOI area statistics. Identical native grids do not prove physical registration or flood attribution. See QA_INVESTIGATION.md for evidence and source references.
