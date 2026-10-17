@@ -1,0 +1,40 @@
+[
+  {
+    "date": "20260815",
+    "fields": {
+      "softwareVersion": "0.25.16",
+      "epsg": "32646",
+      "absoluteOrbitNumber": "5502",
+      "hasInputDataException": "0",
+      "isDithered": "True",
+      "isMixedMode": "False",
+      "listOfObservationModes": "['(NOT SPECIFIED)']",
+      "lookDirection": "Left",
+      "processingDateTime": "2026-08-21T10:21:43",
+      "productDoi": "10.5067/NIL2GCOV-P1",
+      "productSpecificationVersion": "1.5.0",
+      "productVersion": "1.0.11",
+      "zeroDopplerStartTime": "2026-08-15T23:05:27.000000000",
+      "zeroDopplerEndTime": "2026-08-15T23:06:01.999342105"
+    }
+  },
+  {
+    "date": "20260827",
+    "fields": {
+      "softwareVersion": "0.25.16",
+      "epsg": "32646",
+      "absoluteOrbitNumber": "5675",
+      "hasInputDataException": "0",
+      "isDithered": "True",
+      "isMixedMode": "False",
+      "listOfObservationModes": "['(NOT SPECIFIED)']",
+      "lookDirection": "Left",
+      "processingDateTime": "2026-08-29T22:35:08",
+      "productDoi": "10.5067/NIL2GCOV-P1",
+      "productSpecificationVersion": "1.5.0",
+      "productVersion": "1.0.11",
+      "zeroDopplerStartTime": "2026-08-27T23:05:26.000000000",
+      "zeroDopplerEndTime": "2026-08-27T23:06:01.999342105"
+    }
+  }
+]

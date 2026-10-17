@@ -17,3 +17,7 @@ Official guides: https://nisar-docs.asf.alaska.edu/asf-search/ ; https://docs.as
 From PowerShell, invoke E:/TerraScope_AI/tools/asf-env/Scripts/python.exe E:/TerraScope_AI/tools/search_metadata.py with --wkt 'POLYGON((94.05 26.82,94.42 26.82,94.42 27.13,94.05 27.13,94.05 26.82))' --start 2026-08-14T00:00:00Z --end 2026-08-29T00:00:00Z --output PATH_ON_E_DRIVE. Expected recorded result is 3 catalog entries, subject to later archive changes. The script is a local learning artifact and not distributed as submission source. Package versions are recorded alongside this guide.
 
 Auth checkpoint: a restricted placeholder .netrc now exists; user must replace placeholders privately. Unauthenticated tiny GET returned HTTP 401 with zero imagery body bytes. A preceding HEAD returned 200 and must not be mistaken for verified auth.
+
+## Authenticated follow-up
+
+The private .netrc is now configured and authenticated. Standalone colon separators were repaired without changing values. GDAL access required the documented cookie file/jar persistence. HHHH source inspection and crop validation results supersede earlier blocked checkpoints; see REMOTE_EXPLORATION.md. Large-window exploration uses 2 MiB chunks, 64 MiB curl cache, one worker, a 256 MiB observed request budget and a 180-second limit. No raw verbose curl diagnostics are saved because they may contain sensitive headers. Only sanitized operation summaries are retained.

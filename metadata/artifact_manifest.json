@@ -1,6 +1,56 @@
 {
-  "imagery_bytes": 0,
+  "updated_utc": "2026-10-17T20:00:24.406428+00:00",
   "artifacts": [
+    {
+      "path": "01_NASA_Data_Exploration\\cropped_GCOV\\HHHH_20260815_aoi.tif",
+      "bytes": 38712699,
+      "sha256": "204c9f0c37ab27f1ad61fa9e33472cfa9867da4d486989c1ac9d0f70b471f2a3"
+    },
+    {
+      "path": "01_NASA_Data_Exploration\\cropped_GCOV\\HHHH_20260827_aoi.tif",
+      "bytes": 38414270,
+      "sha256": "6dc258eb4ff5db96c6beae16b265fbb94d14a66f7d0ed67e5d20d31373e87ade"
+    },
+    {
+      "path": "01_NASA_Data_Exploration\\exploratory_samples\\HHHH_20260815_tiny.tif",
+      "bytes": 38200,
+      "sha256": "0c0b009e7048079db62da25092f85c30b852d8b1e376873dced83ae2c323dcd9"
+    },
+    {
+      "path": "01_NASA_Data_Exploration\\logs\\20260815_aoi.json",
+      "bytes": 1183,
+      "sha256": "5bd82a9726cd4ca96d6f5852b47d7b66679c79b23d71e2b9bc1c033ddefc3931"
+    },
+    {
+      "path": "01_NASA_Data_Exploration\\logs\\20260815_HHHH.json",
+      "bytes": 259,
+      "sha256": "d544f6287e6ee56140dd7f36ead86ec6ff8200a32b7d5bd818d071e36941bbe0"
+    },
+    {
+      "path": "01_NASA_Data_Exploration\\logs\\20260815_tiny.json",
+      "bytes": 259,
+      "sha256": "ac07014fe5e9945f56e5b7aa7686f05ec4b4029b6672340520aa34f264b17b83"
+    },
+    {
+      "path": "01_NASA_Data_Exploration\\logs\\20260827_aoi.json",
+      "bytes": 1183,
+      "sha256": "53d67960697d5eef304ca1899ca9856f5856a9370e46726a2cca2a3da67508a0"
+    },
+    {
+      "path": "01_NASA_Data_Exploration\\logs\\20260827_HHHH.json",
+      "bytes": 259,
+      "sha256": "65e576a36ea373c6637ed8298800e2f6d8050566041a8a7cc4d4da692560465b"
+    },
+    {
+      "path": "01_NASA_Data_Exploration\\logs\\20260827_product.json",
+      "bytes": 261,
+      "sha256": "1f57fd19ad0289dcc005a9b490dddfb5649ff62055b0ed9576bf28117e49212a"
+    },
+    {
+      "path": "01_NASA_Data_Exploration\\logs\\failed_attempt_20260815.json",
+      "bytes": 396,
+      "sha256": "c5071d2d6e4990cfaed483b24d835bf283b85d2e9b57b05d77d6d3be5b7063b3"
+    },
     {
       "path": "01_NASA_Data_Exploration\\metadata\\access_probe.json",
       "bytes": 725,
@@ -12,14 +62,79 @@
       "sha256": "2c994994af0de21e1986d50979ca28a1b2989d3a2b745a037d7fbfb8af7721ce"
     },
     {
+      "path": "01_NASA_Data_Exploration\\metadata\\authenticated_range_probe.json",
+      "bytes": 124,
+      "sha256": "ee104f47841546eb12bd0a613094abf719580a91dcdbdb467c76540168416fbf"
+    },
+    {
       "path": "01_NASA_Data_Exploration\\metadata\\cmr_crosscheck.json",
       "bytes": 113954,
       "sha256": "d22753f7f85ede464c1db357c3650b80c8d620d9da800f496e59fed215afaa51"
     },
     {
+      "path": "01_NASA_Data_Exploration\\metadata\\QA_REPORT_20260815.pdf",
+      "bytes": 770309,
+      "sha256": "c879df891d9d2f28de1259ac3672913d075d397f029415eed49b3b8a962f9043"
+    },
+    {
+      "path": "01_NASA_Data_Exploration\\metadata\\QA_REPORT_20260815.txt",
+      "bytes": 3410,
+      "sha256": "f842c43c18a9284ed507a8388b3a4ea314e187907310b5bfd13507430d9be101"
+    },
+    {
+      "path": "01_NASA_Data_Exploration\\metadata\\QA_REPORT_20260827.pdf",
+      "bytes": 788831,
+      "sha256": "f478f526a0d18cc3e0be1979a4348919d0b8a8d1103346f80af451cd42d0ce5e"
+    },
+    {
+      "path": "01_NASA_Data_Exploration\\metadata\\QA_REPORT_20260827.txt",
+      "bytes": 3410,
+      "sha256": "5ae80db321a73c77c4aafabdddda44c186d3e67e5f67f6ab424f0fade4cb9576"
+    },
+    {
+      "path": "01_NASA_Data_Exploration\\metadata\\QA_SUMMARY_20260815.csv",
+      "bytes": 1441,
+      "sha256": "8938a6d85d1bcc339e850ebb7b087dc1982fdbb159995c721944b4d81880c688"
+    },
+    {
+      "path": "01_NASA_Data_Exploration\\metadata\\QA_SUMMARY_20260827.csv",
+      "bytes": 1441,
+      "sha256": "8938a6d85d1bcc339e850ebb7b087dc1982fdbb159995c721944b4d81880c688"
+    },
+    {
+      "path": "01_NASA_Data_Exploration\\metadata\\quality_summaries.json",
+      "bytes": 3223,
+      "sha256": "387be94cc2babff5abe14f516b018913590673f686a6e53343074c95404ff4cc"
+    },
+    {
       "path": "01_NASA_Data_Exploration\\metadata\\range_probe.json",
       "bytes": 135,
       "sha256": "d952b9febf926e282952268bb4ed9c5aada8582947a980af25dfc2d5c46a1aa1"
+    },
+    {
+      "path": "01_NASA_Data_Exploration\\metadata\\raster_validation.json",
+      "bytes": 4481,
+      "sha256": "7a3e3c6a55f00bac09bd9686f71cc903932fd6293acbfcebe31415a2c20649e6"
+    },
+    {
+      "path": "01_NASA_Data_Exploration\\metadata\\remote_HHHH_20260815.json",
+      "bytes": 12878,
+      "sha256": "304ca7907424c1f147c2b54bb5f766e2cc3b0d1a85491b58926ec0ea38f7453a"
+    },
+    {
+      "path": "01_NASA_Data_Exploration\\metadata\\remote_HHHH_20260827.json",
+      "bytes": 12878,
+      "sha256": "6cfc68af21970251ffde2c1a571a53a3f8457400c813e94bb2d094e025eacd3b"
+    },
+    {
+      "path": "01_NASA_Data_Exploration\\metadata\\remote_product_20260815.json",
+      "bytes": 144225,
+      "sha256": "0cc7b56322679a8b1fc9fd638c5868d8469d953ec719b43ad0435a2b82238cdb"
+    },
+    {
+      "path": "01_NASA_Data_Exploration\\metadata\\remote_product_20260827.json",
+      "bytes": 144226,
+      "sha256": "5063f8aac8f690f253a87742671cd1ee179e58d02ef49f3370d99ce7930a67b8"
     },
     {
       "path": "01_NASA_Data_Exploration\\scene_inventory\\scene_inventory.csv",

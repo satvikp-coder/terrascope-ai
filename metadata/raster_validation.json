@@ -1,0 +1,152 @@
+{
+  "rasters": [
+    {
+      "file": "E:\\TerraScope_AI\\01_NASA_Data_Exploration\\cropped_GCOV\\HHHH_20260815_aoi.tif",
+      "bytes": 38712699,
+      "sha256": "204c9f0c37ab27f1ad61fa9e33472cfa9867da4d486989c1ac9d0f70b471f2a3",
+      "width": 3707,
+      "height": 3470,
+      "bands": 1,
+      "epsg": "32646",
+      "geoTransform": [
+        604050.0,
+        10.0,
+        0.0,
+        3001630.0,
+        0.0,
+        -10.0
+      ],
+      "bounds": [
+        604050.0,
+        2966930.0,
+        641120.0,
+        3001630.0
+      ],
+      "data_type": "Float32",
+      "nodata": "nan",
+      "finite_pixels": 12863290,
+      "total_pixels": 12863290,
+      "negative_pixels": 0,
+      "zero_pixels": 0,
+      "minimum": 0.00020995177328586578,
+      "maximum": 1325.28125,
+      "mean": 0.14745499193668365,
+      "metadata": {
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": "70250.297",
+        "mean_value": "0.29340503",
+        "min_value": "2.8544802e-17",
+        "sample_stddev": "7.9953814",
+        "units": "1",
+        "valid_min": "0",
+        "_FillValue": "nan"
+      },
+      "valid": true
+    },
+    {
+      "file": "E:\\TerraScope_AI\\01_NASA_Data_Exploration\\cropped_GCOV\\HHHH_20260827_aoi.tif",
+      "bytes": 38414270,
+      "sha256": "6dc258eb4ff5db96c6beae16b265fbb94d14a66f7d0ed67e5d20d31373e87ade",
+      "width": 3707,
+      "height": 3470,
+      "bands": 1,
+      "epsg": "32646",
+      "geoTransform": [
+        604050.0,
+        10.0,
+        0.0,
+        3001630.0,
+        0.0,
+        -10.0
+      ],
+      "bounds": [
+        604050.0,
+        2966930.0,
+        641120.0,
+        3001630.0
+      ],
+      "data_type": "Float32",
+      "nodata": "nan",
+      "finite_pixels": 12863290,
+      "total_pixels": 12863290,
+      "negative_pixels": 0,
+      "zero_pixels": 0,
+      "minimum": 0.0009082257747650146,
+      "maximum": 699.1484375,
+      "mean": 0.1483992040157318,
+      "metadata": {
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": "19987.584",
+        "mean_value": "0.30569258",
+        "min_value": "3.3321502e-17",
+        "sample_stddev": "5.6704645",
+        "units": "1",
+        "valid_min": "0",
+        "_FillValue": "nan"
+      },
+      "valid": true
+    },
+    {
+      "file": "E:\\TerraScope_AI\\01_NASA_Data_Exploration\\exploratory_samples\\HHHH_20260815_tiny.tif",
+      "bytes": 38200,
+      "sha256": "0c0b009e7048079db62da25092f85c30b852d8b1e376873dced83ae2c323dcd9",
+      "width": 102,
+      "height": 112,
+      "bands": 1,
+      "epsg": "32646",
+      "geoTransform": [
+        622020.0,
+        10.0,
+        0.0,
+        2988150.0,
+        0.0,
+        -10.0
+      ],
+      "bounds": [
+        622020.0,
+        2987030.0,
+        623040.0,
+        2988150.0
+      ],
+      "data_type": "Float32",
+      "nodata": "nan",
+      "finite_pixels": 11424,
+      "total_pixels": 11424,
+      "negative_pixels": 0,
+      "zero_pixels": 0,
+      "minimum": 0.003220885992050171,
+      "maximum": 19.994384765625,
+      "mean": 0.15805776417255402,
+      "metadata": {
+        "description": "Covariance between HH and HH",
+        "grid_mapping": "projection",
+        "long_name": "Geocoded polarimetric covariance term HHHH",
+        "max_value": "70250.297",
+        "mean_value": "0.29340503",
+        "min_value": "2.8544802e-17",
+        "sample_stddev": "7.9953814",
+        "units": "1",
+        "valid_min": "0",
+        "_FillValue": "nan"
+      },
+      "valid": true
+    }
+  ],
+  "comparison_ready_grid": true,
+  "failed_artifacts": [
+    {
+      "file": "E:\\TerraScope_AI\\01_NASA_Data_Exploration\\exploratory_samples\\HHHH_20260815_aoi_FAILED_TIMEOUT.tif",
+      "bytes": 34212854,
+      "sha256": "100fabe0fad40a0b0c11abad436a0542f2a02f78da042f2aebe9397f394954f6",
+      "status": "100-second timeout; zero finite pixels; failed artifact removed after checksum audit",
+      "finite_pixels": 0,
+      "total_pixels": 12863290
+    }
+  ],
+  "caution": "Grid compatibility does not establish flood attribution or complete quality masking.",
+  "tiny_matches_aoi_pixels_exactly": true
+}

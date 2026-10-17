@@ -1,6 +1,6 @@
 # Authoritative preparation status
 
-Updated 2026-10-17T19:40:20.926209+00:00. PREPARATION ONLY; competition solution unstarted.
+Updated 2026-10-17T20:00:39.897832+00:00. PREPARATION ONLY; competition solution unstarted.
 
 ## Completed and verified
 
@@ -13,26 +13,20 @@ Updated 2026-10-17T19:40:20.926209+00:00. PREPARATION ONLY; competition solution
 - Private repository created and first push verified: https://github.com/satvikp-coder/terrascope-ai ; branch main. Last successful verified checkpoint before this update: c88502dd8ae4c6b8afa3e47ab511ce761a9d8826. Final follow-up hash is recorded in external 00_Project_Management/handoff/last_verified_commit.txt after remote verification.
 - Documentation: research scope, access/setup, scene inventory, scientific limitations, timeline, future architecture, event plan, reproducibility and handoff. No app code committed.
 
-## Blocked
+## Latest verified remote preparation â€” 2026-10-17T20:00:24.406428+00:00
 
-- Earthdata credentials missing. A placeholder .netrc was created at the standard user-profile location with inheritance disabled and current-user access only. It is outside external storage and Git. User must privately replace placeholders; presence of this file alone does not mean authentication works.
-- HEAD 200 followed by actual tiny Range GET 401: read access requires authentication. Imagery body bytes read: zero. This is authorization failure, not an empty catalog or unavailable product.
-- GDAL remote metadata, tiny crop, AOI crops and pixel/grid/unit/quality checks are deferred until authentication succeeds.
-- Actual local event/start/timezone and detailed official challenge requirements remain to verify.
+- Authentication repaired and verified securely: HTTP 206, 16-byte HDF5 signature. No credential values changed or committed.
+- Both product containers and frequency-A HHHH inspected with GDAL 3.13.3. CRS/grid/type/units/NoData agree; see REMOTE_EXPLORATION.md.
+- Tiny sample successfully cropped and validated before AOI processing. Raster validity and exact sizes are in metadata/raster_validation.json; file SHA256 and all data artifacts are in metadata/artifact_manifest.json.
+- Native-grid AOI compatibility: True. Quality masking and independent scientific validation remain outstanding; no flood result is claimed.
+- Both official QA summaries contain an identification-group FAIL, despite passing grid/calibration-LUT checks. Exact failed identification test remains unresolved; see REMOTE_EXPLORATION.md. Scientific suitability is conditional.
+- Imagery storage: external E:/TerraScope_AI/01_NASA_Data_Exploration/exploratory_samples and cropped_GCOV only. Full HDF5 downloads: none. No competition app or detection system built.
+- Last previously verified commit: e5544c959a1801143f42b252e59d8dab3ab21bbe. Final verified remote hash is stored outside Git in 00_Project_Management/handoff/last_verified_commit.txt after push; private repository https://github.com/satvikp-coder/terrascope-ai, main.
 
-## Data and science
+## Remaining restrictions and next actions
 
-Selected candidates: 2026-08-15T23:05:27Z and 2026-08-27T23:05:26Z, track 40/frame 15 ascending, PROVISIONAL V1, 40+5, HH/HV. Full identifiers in inventory. Catalog compatibility confirmed; scientific comparison readiness unverified.
-
-Satellite imagery downloaded: 0 bytes; raster outputs: none. Full-scene downloads avoided: 7,084,179,456 + 7,289,700,352 = 14,373,879,808 bytes. Metadata JSON/CSV and small environment packages were downloaded/stored on E:. Project logical size measured approximately 103.3 MB before final notes, dominated by isolated dependencies/cache, not imagery. No flood area, confidence or accuracy measured.
-
-## Next recommended actions
-
-1. Privately complete user-profile .netrc and identify registered local event.
-2. Verify auth using a bounded Range request to the saved authoritative URL; never print credentials or signed redirects.
-3. Inspect remote metadata with configured QGIS GDAL, tiny crop and validation, then only two AOI crops if resources are acceptable. Ask before expected >1 GB transfer or significant processing.
-4. Record units/grid/calibration/quality and comparison readiness; update docs and Git.
-5. Recheck full challenge resources and local rules before event. Build only after verified start AND explicit START TERRASCOPE AI HACKATHON BUILD.
-
-Authentication follow-up: user reported editing .netrc. A safe structural check found extra entries on both login/password lines; file parsing failed before any network authentication attempt. Credentials were not modified. User asked to correct the three-field format privately. Future checks must catch parser exceptions without logging their text because parser errors can include input tokens.
-
+1. Review pixel-quality masks, calibration/geometry caveats and small QA summaries before future quantitative interpretation. No change analysis yet.
+   Resolve both products' identification-group QA failure with official documentation or ASF support before claiming full scientific readiness.
+2. Verify exact polygon AOI handling before area statistics; current crops are enclosing native-grid windows.
+3. Identify participant's local event and verify official start/timezone; recheck detailed challenge resources.
+4. Continue permitted research only. Competition development requires verified official start AND exact user authorization START TERRASCOPE AI HACKATHON BUILD.

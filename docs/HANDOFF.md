@@ -1,15 +1,13 @@
-# Session handoff
+# Handoff
 
-Read PREPARATION_STATUS.md first; it is authoritative. Repository lives at E:/TerraScope_AI/05_GitHub_Repository/terrascope-ai. External research data are siblings outside Git. Do not move large data to the Windows system drive.
+Read PREPARATION_STATUS.md first, then REMOTE_EXPLORATION.md and metadata/raster_validation.json. Repository: E:/TerraScope_AI/05_GitHub_Repository/terrascope-ai; private GitHub terrascope-ai on main. External last_verified_commit.txt records the verified final hash.
 
-User selected Option B remote cropping, no full HDF5 scenes. Ask before any planned >1 GB transfer, unusually large output or significant processing. Process no more than two verified scenes initially. Preserve user files and credentials; never print authentication contents.
+Earthdata auth now works. User-profile .netrc separators were repaired; preserve its restricted ACL. Never display credentials, cookie contents, authorization headers or signed redirect URLs. GDAL requires cookie file/jar in protected user temporary storage plus netrc enabled. Both sources were accessed with existing QGIS GDAL 3.13.3, no full HDF5 downloads. Generic exploration/validation scripts remain outside Git in E:/TerraScope_AI/tools; reuse checksummed outputs rather than repeat transfers.
 
-User designated E: (500 GB), overriding the earlier 1 TB estimate. Existing QGIS includes GDAL 3.13; use its o4w_env.bat environment. ASF isolated environment and generic learning script are in E:/TerraScope_AI/tools, excluded from the repository. The docs writer is a one-time bootstrap and refuses overwrites; do not rerun it.
+Two requested track 40/frame 15 ascending PROVISIONAL GCOV observations are catalog-verified and HHHH-inspected. Exact source IDs/URLs are in metadata/scene_inventory.json. Check raster_validation.json for actual finished outputs and validity; do not infer completion solely from file existence. Crops preserve linear dimensionless gamma-0 values and native 10 m EPSG:32646 grids. They enclose the WGS84 AOI and are not exact polygon masks. Crop statistics were computed separately from inherited full-scene metadata statistics. Source quality masks and independent validation still require review before interpretation.
 
-No actual competition app, analysis algorithm, model, frontend or backend exists. Future architecture and event schedule are plans only. Do not copy exploratory code into submission work where prohibited. Require official local start verification AND user text START TERRASCOPE AI HACKATHON BUILD before any competition build.
+Critical scientific caveat: both official QA summary CSVs fail an identification-group check. Grid and calibration-LUT checks pass. QA PDFs do not identify the exact failing test; NOT SPECIFIED observation modes are an unconfirmed lead only. Resolve this before calling the pair scientifically quality-approved. Small official QA PDFs/text stay outside Git; compact summaries/metadata are committed.
 
-Pending user action: fill the private user-profile .netrc template (placeholder only; not authenticated) and identification of official local event. Do not ask for passwords in chat. No successful auth or raster read should be inferred from environment setup.
+Option B only. Ask before expected >1 GB transfers, unusually large output or significant processing. Large data stay on E:, never Git; no full-scene fallback without approval. Logs and metadata remain E:/TerraScope_AI/01_NASA_Data_Exploration. Keep docs and small public metadata only in Git.
 
-After each phase record facts and blockers, audit lightweight staged files and commit/push as authorized. Determine current successful commit with git log and verify it against GitHub; a tracked document cannot contain its own final commit hash.
-
-Catalog phase completed: 3 results, requested track 40/frame 15 pair confirmed in metadata only. Tiny unauthenticated Range GET returned 401; do not proceed with raster access until auth works. External last_verified_commit.txt records the final verified GitHub hash.
+Competition application, model and flood detector remain unstarted. Registered local event/start/timezone unknown; detailed challenge resources need recheck. Require verified event start AND exact user text START TERRASCOPE AI HACKATHON BUILD before competition development. Preparatory utilities must not be copied into submission work where prohibited.
