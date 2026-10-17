@@ -1,3 +1,15 @@
+## AU404 environmental-event research update — 2026-10-18
+
+Team: AU404; project: TerraScope AI. Starting verified main730eb95; public repository. Read [environmental event selection](research/ENVIRONMENTAL_EVENT_SELECTION.md) and [compact source/catalog evidence](research/event_selection_metadata.json) before selecting any new AOI. This section supersedes any assumption that August15–27 Majuli is a verified flood case; it does not replace preserved measurements or finalize a new region.
+
+Preferred **provisional research lead**: July19 Upper Assam flood in Nazira/Sivasagar; second Teok/Jorhat; third existing Majuli surface/river exploration. Official DRIMS July10,22,23 and August15,27 plus two erosion reports retrieved; export timestamps distinguish retrospective reports from event dates. July22–23 explicitly list Nazira/Teok; Majuli lacks an established interval-specific event. Rejected homonymous No.5Majuli in Udalguri (longitude92.175871) as evidence for Majuli island.
+
+ASF metadata identifies matching provisional GCOV July10T23:05:29Z /July22T23:05:28Z track040/frame015, joint40+5MHz HH/HV, ISOLeft look; full footprints cover both discovery boxes. Same aggregate identification QAFAIL persists for July, exact component causes not established. A matched Sentinel-1D July10/22 track70/frame1267 reference pair partially overlaps Nazira, not all of it. Separate Teok reference query returned0 within tested dates; cloudy HLS candidates exist. No final candidate passes all scientific gates; CONDITIONALLY_READY retained. Scores are research-priority judgments, not accuracy/confidence.
+
+No new imagery, HDF5, thumbnails, raster processing or originals modification. Seven official government report PDFs5,390,080bytes and NISAR CSV/XML metadata237,317bytes stored only on E: outside Git, plus small catalog receipts. New July crops would require separate future authorization; existing August rasters cannot substitute. Previously prepared imagery/utilities remain isolated pending organizer reuse ruling. No message sent, issue/milestone changed, history rewritten or competition component built.
+
+Next action: establish dated affected geometry/reference within a candidate overlap, not download imagery. Owner obtains Ahmedabad start/reuse clarification; source/metadata research may continue. Event build requires verified official start, applicable permission and exact owner authorization phrase. Final commit receipt is stored externally after safe push in 00_Project_Management/handoff/last_verified_commit.txt.
+
 ## Confirmed publication and preparation verification ? October 18
 
 The owner subsequently instructed public visibility. After a clean full-history audit of 7 commits / 117 objects / 87 blobs, safe preparation commit 597695330ed353a7ceb847650cb43af773c4321a was pushed and verified against GitHub main. The repository was changed to PUBLIC via GitHub CLI. Anonymous unauthenticated GitHub API and web-page requests both returned HTTP 200; API reports private=false and the same main SHA. Existing five personal-author-email commits remain; no history rewrite/force push occurred.

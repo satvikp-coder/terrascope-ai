@@ -2,6 +2,8 @@
 
 **Research and preparation only. No completed competition solution or flood-detection application exists.**
 
+**Team: AU404. Project: TerraScope AI.**
+
 TerraScope AI is a proposed satellite-based Earth surface-change intelligence project for NASA Space Apps Challenge 2026, *Dancing with the SARs*. The exploratory focus is Majuli and the Brahmaputra floodplain, Assam, India. This repository records data-access experiments, scientific QA findings, provenance, environment notes and future plans. It claims no detected floods, model accuracy or validated environmental result.
 
 Current dataset assessment: **CONDITIONALLY_READY**. Two genuine NISAR provisional GCOV observations (August 15 and 27, 2026) have matching 10 m grids. Complete validity/exception checks pass over the exact AOI; metadata warnings, radiometric/geometry limitations and independent event validation remain. See [final readiness](docs/FINAL_DATA_READINESS.md), [scientific limitations](docs/SCIENTIFIC_LIMITATIONS.md), [status](docs/PREPARATION_STATUS.md), and [handoff](docs/HANDOFF.md).
@@ -37,3 +39,5 @@ The [global FAQ](https://www.spaceappschallenge.org/resources/participant-faqs/)
 ## Superseding owner instruction ? October 18
 
 After the preparation/privacy review, the owner explicitly requested public visibility. Preserve existing history, including the five personal-author-email commits; do not rewrite or force-push. Earlier private-only instructions in this document describe the prior state and are superseded for this publication action. Complete the fresh object scan, push safe documentation, change visibility and verify anonymously. The final verified visibility/commit receipt is recorded in the external handoff directory; never assume success from this plan alone. Competition implementation remains gated and unbuilt.
+
+Latest research: [environmental event selection](docs/research/ENVIRONMENTAL_EVENT_SELECTION.md) provisionally prioritizes the documented July19 Upper Assam flood near Nazira/Sivasagar. Majuli imagery is preserved; no final study area or new imagery download is authorized.

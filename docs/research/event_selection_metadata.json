@@ -1,0 +1,1072 @@
+{
+  "reviewed_utc": "2026-10-17T21:41:04.455994+00:00",
+  "team": "AU404",
+  "project": "TerraScope AI",
+  "status": "PROVISIONAL_RESEARCH_PREFERENCE_B_NOT_FINAL_STUDY_AREA",
+  "search_boxes_wgs84_not_flood_boundaries": {
+    "B_nazira_sivasagar": [
+      94.55,
+      26.84,
+      94.83,
+      27.04
+    ],
+    "C_teok_jorhat": [
+      94.27,
+      26.74,
+      94.46,
+      26.94
+    ]
+  },
+  "queries": [
+    {
+      "name": "nazira_sivasagar",
+      "query": {
+        "dataset": "NISAR",
+        "processingLevel": "GCOV",
+        "dataMaturity": "PROVISIONAL",
+        "intersectsWith": "POLYGON((94.55 26.84,94.83 26.84,94.83 27.04,94.55 27.04,94.55 26.84))",
+        "start": "2026-07-07T00:00:00Z",
+        "end": "2026-07-27T23:59:59Z",
+        "maxResults": 30
+      },
+      "count": 7,
+      "limit_reached": false
+    },
+    {
+      "name": "teok_jorhat",
+      "query": {
+        "dataset": "NISAR",
+        "processingLevel": "GCOV",
+        "dataMaturity": "PROVISIONAL",
+        "intersectsWith": "POLYGON((94.27 26.74,94.46 26.74,94.46 26.94,94.27 26.94,94.27 26.74))",
+        "start": "2026-07-07T00:00:00Z",
+        "end": "2026-07-27T23:59:59Z",
+        "maxResults": 30
+      },
+      "count": 4,
+      "limit_reached": false
+    }
+  ],
+  "nisar_scenes": [
+    {
+      "sceneName": "NISAR_L2_PR_GCOV_024_163_D_075_2005_QPDH_A_20260707T122530_20260707T122605_P05023_N_F_J_001",
+      "startTime": "2026-07-07T12:25:30Z",
+      "stopTime": "2026-07-07T12:26:05Z",
+      "pathNumber": 163,
+      "frameNumber": 75,
+      "flightDirection": "DESCENDING",
+      "processingLevel": "GCOV",
+      "sensor": "L-SAR",
+      "pgeVersion": "R05.02.3",
+      "crid": "P05023",
+      "mainBandPolarization": [
+        "HH",
+        "HV",
+        "VH",
+        "VV"
+      ],
+      "sideBandPolarization": [
+        "HH",
+        "HV"
+      ],
+      "frameCoverage": "Full",
+      "jointObservation": true,
+      "rangeBandwidth": [
+        "20+5"
+      ],
+      "productionConfiguration": "PR",
+      "collectionName": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "orbitType": "MOE",
+      "beamModeType": null,
+      "processingDate": "2026-07-10T07:10:44Z",
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_163_D_075_2005_QPDH_A_20260707T122530_20260707T122605_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_163_D_075_2005_QPDH_A_20260707T122530_20260707T122605_P05023_N_F_J_001.h5",
+      "catalog_source_bytes": 8468299776,
+      "footprint": {
+        "coordinates": [
+          [
+            [
+              93.05248,
+              28.11851
+            ],
+            [
+              92.37323,
+              25.99966
+            ],
+            [
+              94.83553,
+              25.38942
+            ],
+            [
+              95.5025,
+              27.50813
+            ],
+            [
+              93.05248,
+              28.11851
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "search_box_coverage": {
+        "B_nazira_sivasagar": {
+          "intersects": true,
+          "covers": true
+        },
+        "C_teok_jorhat": {
+          "intersects": true,
+          "covers": true
+        }
+      },
+      "raster_downloaded": false
+    },
+    {
+      "sceneName": "NISAR_L2_PR_GCOV_025_040_A_015_4005_DHDH_A_20260710T230529_20260710T230603_P05023_N_F_J_001",
+      "startTime": "2026-07-10T23:05:29Z",
+      "stopTime": "2026-07-10T23:06:03Z",
+      "pathNumber": 40,
+      "frameNumber": 15,
+      "flightDirection": "ASCENDING",
+      "processingLevel": "GCOV",
+      "sensor": "L-SAR",
+      "pgeVersion": "R05.02.3",
+      "crid": "P05023",
+      "mainBandPolarization": [
+        "HH",
+        "HV"
+      ],
+      "sideBandPolarization": [
+        "HH",
+        "HV"
+      ],
+      "frameCoverage": "Full",
+      "jointObservation": true,
+      "rangeBandwidth": [
+        "40+5"
+      ],
+      "productionConfiguration": "PR",
+      "collectionName": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "orbitType": "MOE",
+      "beamModeType": null,
+      "processingDate": "2026-07-16T23:17:35Z",
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_040_A_015_4005_DHDH_A_20260710T230529_20260710T230603_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_040_A_015_4005_DHDH_A_20260710T230529_20260710T230603_P05023_N_F_J_001.h5",
+      "catalog_source_bytes": 7088373760,
+      "footprint": {
+        "coordinates": [
+          [
+            [
+              95.55954,
+              26.03041
+            ],
+            [
+              94.94831,
+              28.10214
+            ],
+            [
+              92.39399,
+              27.46651
+            ],
+            [
+              93.07215,
+              25.41442
+            ],
+            [
+              95.55954,
+              26.03041
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "search_box_coverage": {
+        "B_nazira_sivasagar": {
+          "intersects": true,
+          "covers": true
+        },
+        "C_teok_jorhat": {
+          "intersects": true,
+          "covers": true
+        }
+      },
+      "raster_downloaded": false
+    },
+    {
+      "sceneName": "NISAR_L2_PR_GCOV_025_062_D_075_2005_QPDH_A_20260712T121710_20260712T121745_P05023_N_F_J_001",
+      "startTime": "2026-07-12T12:17:10Z",
+      "stopTime": "2026-07-12T12:17:45Z",
+      "pathNumber": 62,
+      "frameNumber": 75,
+      "flightDirection": "DESCENDING",
+      "processingLevel": "GCOV",
+      "sensor": "L-SAR",
+      "pgeVersion": "R05.02.3",
+      "crid": "P05023",
+      "mainBandPolarization": [
+        "HH",
+        "HV",
+        "VH",
+        "VV"
+      ],
+      "sideBandPolarization": [
+        "HH",
+        "HV"
+      ],
+      "frameCoverage": "Full",
+      "jointObservation": true,
+      "rangeBandwidth": [
+        "20+5"
+      ],
+      "productionConfiguration": "PR",
+      "collectionName": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "orbitType": "MOE",
+      "beamModeType": null,
+      "processingDate": "2026-07-23T14:57:34Z",
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_062_D_075_2005_QPDH_A_20260712T121710_20260712T121745_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_062_D_075_2005_QPDH_A_20260712T121710_20260712T121745_P05023_N_F_J_001.h5",
+      "catalog_source_bytes": 8501854208,
+      "footprint": {
+        "coordinates": [
+          [
+            [
+              95.081,
+              28.14733
+            ],
+            [
+              94.46019,
+              26.01445
+            ],
+            [
+              96.91381,
+              25.40645
+            ],
+            [
+              97.59952,
+              27.52034
+            ],
+            [
+              95.081,
+              28.14733
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "search_box_coverage": {
+        "B_nazira_sivasagar": {
+          "intersects": true,
+          "covers": false
+        },
+        "C_teok_jorhat": {
+          "intersects": false,
+          "covers": false
+        }
+      },
+      "raster_downloaded": false
+    },
+    {
+      "sceneName": "NISAR_L2_PR_GCOV_025_112_A_015_4005_DHDH_A_20260715T225709_20260715T225744_P05023_N_F_J_001",
+      "startTime": "2026-07-15T22:57:09Z",
+      "stopTime": "2026-07-15T22:57:44Z",
+      "pathNumber": 112,
+      "frameNumber": 15,
+      "flightDirection": "ASCENDING",
+      "processingLevel": "GCOV",
+      "sensor": "L-SAR",
+      "pgeVersion": "R05.02.3",
+      "crid": "P05023",
+      "mainBandPolarization": [
+        "HH",
+        "HV"
+      ],
+      "sideBandPolarization": [
+        "HH",
+        "HV"
+      ],
+      "frameCoverage": "Full",
+      "jointObservation": true,
+      "rangeBandwidth": [
+        "40+5"
+      ],
+      "productionConfiguration": "PR",
+      "collectionName": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "orbitType": "MOE",
+      "beamModeType": null,
+      "processingDate": "2026-07-20T15:15:14Z",
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_112_A_015_4005_DHDH_A_20260715T225709_20260715T225744_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_112_A_015_4005_DHDH_A_20260715T225709_20260715T225744_P05023_N_F_J_001.h5",
+      "catalog_source_bytes": 7402946560,
+      "footprint": {
+        "coordinates": [
+          [
+            [
+              97.62934,
+              26.02051
+            ],
+            [
+              96.97935,
+              28.14636
+            ],
+            [
+              94.47939,
+              27.52413
+            ],
+            [
+              95.15161,
+              25.40678
+            ],
+            [
+              97.62934,
+              26.02051
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "search_box_coverage": {
+        "B_nazira_sivasagar": {
+          "intersects": true,
+          "covers": false
+        },
+        "C_teok_jorhat": {
+          "intersects": false,
+          "covers": false
+        }
+      },
+      "raster_downloaded": false
+    },
+    {
+      "sceneName": "NISAR_L2_PR_GCOV_025_163_D_075_4005_DHDH_A_20260719T122530_20260719T122604_P05023_N_F_J_001",
+      "startTime": "2026-07-19T12:25:30Z",
+      "stopTime": "2026-07-19T12:26:04Z",
+      "pathNumber": 163,
+      "frameNumber": 75,
+      "flightDirection": "DESCENDING",
+      "processingLevel": "GCOV",
+      "sensor": "L-SAR",
+      "pgeVersion": "R05.02.3",
+      "crid": "P05023",
+      "mainBandPolarization": [
+        "HH",
+        "HV"
+      ],
+      "sideBandPolarization": [
+        "HH",
+        "HV"
+      ],
+      "frameCoverage": "Full",
+      "jointObservation": true,
+      "rangeBandwidth": [
+        "40+5"
+      ],
+      "productionConfiguration": "PR",
+      "collectionName": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "orbitType": "MOE",
+      "beamModeType": null,
+      "processingDate": "2026-07-22T04:12:59Z",
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_163_D_075_4005_DHDH_A_20260719T122530_20260719T122604_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_163_D_075_4005_DHDH_A_20260719T122530_20260719T122604_P05023_N_F_J_001.h5",
+      "catalog_source_bytes": 7071596544,
+      "footprint": {
+        "coordinates": [
+          [
+            [
+              93.00143,
+              28.08326
+            ],
+            [
+              92.34487,
+              26.02235
+            ],
+            [
+              94.83968,
+              25.40437
+            ],
+            [
+              95.48655,
+              27.46462
+            ],
+            [
+              93.00143,
+              28.08326
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "search_box_coverage": {
+        "B_nazira_sivasagar": {
+          "intersects": true,
+          "covers": true
+        },
+        "C_teok_jorhat": {
+          "intersects": true,
+          "covers": true
+        }
+      },
+      "raster_downloaded": false
+    },
+    {
+      "sceneName": "NISAR_L2_PR_GCOV_026_040_A_015_4005_DHDH_A_20260722T230528_20260722T230602_P05023_N_F_J_001",
+      "startTime": "2026-07-22T23:05:28Z",
+      "stopTime": "2026-07-22T23:06:02Z",
+      "pathNumber": 40,
+      "frameNumber": 15,
+      "flightDirection": "ASCENDING",
+      "processingLevel": "GCOV",
+      "sensor": "L-SAR",
+      "pgeVersion": "R05.02.3",
+      "crid": "P05023",
+      "mainBandPolarization": [
+        "HH",
+        "HV"
+      ],
+      "sideBandPolarization": [
+        "HH",
+        "HV"
+      ],
+      "frameCoverage": "Full",
+      "jointObservation": true,
+      "rangeBandwidth": [
+        "40+5"
+      ],
+      "productionConfiguration": "PR",
+      "collectionName": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "orbitType": "MOE",
+      "beamModeType": null,
+      "processingDate": "2026-07-25T10:37:34Z",
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_026_040_A_015_4005_DHDH_A_20260722T230528_20260722T230602_P05023_N_F_J_001/NISAR_L2_PR_GCOV_026_040_A_015_4005_DHDH_A_20260722T230528_20260722T230602_P05023_N_F_J_001.h5",
+      "catalog_source_bytes": 7084179456,
+      "footprint": {
+        "coordinates": [
+          [
+            [
+              95.56736,
+              26.01297
+            ],
+            [
+              94.95386,
+              28.08414
+            ],
+            [
+              92.40239,
+              27.44927
+            ],
+            [
+              93.07658,
+              25.39617
+            ],
+            [
+              95.56736,
+              26.01297
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "search_box_coverage": {
+        "B_nazira_sivasagar": {
+          "intersects": true,
+          "covers": true
+        },
+        "C_teok_jorhat": {
+          "intersects": true,
+          "covers": true
+        }
+      },
+      "raster_downloaded": false
+    },
+    {
+      "sceneName": "NISAR_L2_PR_GCOV_026_062_D_075_4005_DHDH_A_20260724T121709_20260724T121744_P05023_N_F_J_001",
+      "startTime": "2026-07-24T12:17:09Z",
+      "stopTime": "2026-07-24T12:17:44Z",
+      "pathNumber": 62,
+      "frameNumber": 75,
+      "flightDirection": "DESCENDING",
+      "processingLevel": "GCOV",
+      "sensor": "L-SAR",
+      "pgeVersion": "R05.02.3",
+      "crid": "P05023",
+      "mainBandPolarization": [
+        "HH",
+        "HV"
+      ],
+      "sideBandPolarization": [
+        "HH",
+        "HV"
+      ],
+      "frameCoverage": "Full",
+      "jointObservation": true,
+      "rangeBandwidth": [
+        "40+5"
+      ],
+      "productionConfiguration": "PR",
+      "collectionName": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "orbitType": "MOE",
+      "beamModeType": null,
+      "processingDate": "2026-07-26T21:31:40Z",
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_026_062_D_075_4005_DHDH_A_20260724T121709_20260724T121744_P05023_N_F_J_001/NISAR_L2_PR_GCOV_026_062_D_075_4005_DHDH_A_20260724T121709_20260724T121744_P05023_N_F_J_001.h5",
+      "catalog_source_bytes": 7461666816,
+      "footprint": {
+        "coordinates": [
+          [
+            [
+              95.06746,
+              28.17417
+            ],
+            [
+              94.42981,
+              26.04528
+            ],
+            [
+              96.92,
+              25.42853
+            ],
+            [
+              97.60497,
+              27.54265
+            ],
+            [
+              95.06746,
+              28.17417
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "search_box_coverage": {
+        "B_nazira_sivasagar": {
+          "intersects": true,
+          "covers": false
+        },
+        "C_teok_jorhat": {
+          "intersects": false,
+          "covers": false
+        }
+      },
+      "raster_downloaded": false
+    }
+  ],
+  "preferred_nisar_pair_ids": [
+    "NISAR_L2_PR_GCOV_025_040_A_015_4005_DHDH_A_20260710T230529_20260710T230603_P05023_N_F_J_001",
+    "NISAR_L2_PR_GCOV_026_040_A_015_4005_DHDH_A_20260722T230528_20260722T230602_P05023_N_F_J_001"
+  ],
+  "preferred_pair_qa_metadata": [
+    {
+      "date": "2026-07-10",
+      "summary_checks": [
+        {
+          "Tool": "QA",
+          "Check": "Able to open input NISAR file?",
+          "Result": "PASS",
+          "Threshold": "",
+          "Actual": "",
+          "Notes": ""
+        },
+        {
+          "Tool": "QA",
+          "Check": "Coordinate grid metadata cubes are valid?",
+          "Result": "PASS",
+          "Threshold": "",
+          "Actual": "",
+          "Notes": ""
+        },
+        {
+          "Tool": "QA",
+          "Check": "Calibration information LUTs are valid?",
+          "Result": "PASS",
+          "Threshold": "",
+          "Actual": "",
+          "Notes": "`crosstalk` LUTs skipped."
+        },
+        {
+          "Tool": "QA",
+          "Check": "Passes all `identification` group checks?",
+          "Result": "FAIL",
+          "Threshold": "",
+          "Actual": "",
+          "Notes": ""
+        },
+        {
+          "Tool": "QA",
+          "Check": "% Cumulative NaN and Inf and fill and near-zero pixels under threshold?",
+          "Result": "PASS",
+          "Threshold": "",
+          "Actual": "",
+          "Notes": "GCOV_L_A_HHHH backscatter: If a 'FAIL' then all histogram bin counts are zero. This likely indicates that the raster contained no valid data. Note: check performed on decimated raster not full raster."
+        },
+        {
+          "Tool": "QA",
+          "Check": "% Cumulative NaN and Inf and fill and near-zero pixels under threshold?",
+          "Result": "PASS",
+          "Threshold": "",
+          "Actual": "",
+          "Notes": "GCOV_L_A_HVHV backscatter: If a 'FAIL' then all histogram bin counts are zero. This likely indicates that the raster contained no valid data. Note: check performed on decimated raster not full raster."
+        },
+        {
+          "Tool": "QA",
+          "Check": "% Cumulative NaN and Inf and fill and near-zero pixels under threshold?",
+          "Result": "PASS",
+          "Threshold": "",
+          "Actual": "",
+          "Notes": "GCOV_L_B_HHHH backscatter: If a 'FAIL' then all histogram bin counts are zero. This likely indicates that the raster contained no valid data. Note: check performed on decimated raster not full raster."
+        },
+        {
+          "Tool": "QA",
+          "Check": "% Cumulative NaN and Inf and fill and near-zero pixels under threshold?",
+          "Result": "PASS",
+          "Threshold": "",
+          "Actual": "",
+          "Notes": "GCOV_L_B_HVHV backscatter: If a 'FAIL' then all histogram bin counts are zero. This likely indicates that the raster contained no valid data. Note: check performed on decimated raster not full raster."
+        },
+        {
+          "Tool": "QA",
+          "Check": "QA completed with no exceptions?",
+          "Result": "PASS",
+          "Threshold": "",
+          "Actual": "",
+          "Notes": ""
+        }
+      ],
+      "iso_selected_attributes": [
+        [
+          "acquisitionInformation",
+          "look direction",
+          "look direction of the sensor",
+          "string",
+          "Left"
+        ],
+        [
+          "processingInformation",
+          "range bandwidth",
+          "processed range bandwidth - frequency A",
+          "float",
+          "Hz",
+          "40000000.0"
+        ],
+        [
+          "processingInformation",
+          "range bandwidth",
+          "processed range bandwidth - frequency B",
+          "float",
+          "Hz",
+          "5000000.0"
+        ]
+      ],
+      "identification_subtest_causes": "Not established for July granules; do not inherit exact August errors without inspecting authoritative evidence."
+    },
+    {
+      "date": "2026-07-22",
+      "summary_checks": [
+        {
+          "Tool": "QA",
+          "Check": "Able to open input NISAR file?",
+          "Result": "PASS",
+          "Threshold": "",
+          "Actual": "",
+          "Notes": ""
+        },
+        {
+          "Tool": "QA",
+          "Check": "Coordinate grid metadata cubes are valid?",
+          "Result": "PASS",
+          "Threshold": "",
+          "Actual": "",
+          "Notes": ""
+        },
+        {
+          "Tool": "QA",
+          "Check": "Calibration information LUTs are valid?",
+          "Result": "PASS",
+          "Threshold": "",
+          "Actual": "",
+          "Notes": "`crosstalk` LUTs skipped."
+        },
+        {
+          "Tool": "QA",
+          "Check": "Passes all `identification` group checks?",
+          "Result": "FAIL",
+          "Threshold": "",
+          "Actual": "",
+          "Notes": ""
+        },
+        {
+          "Tool": "QA",
+          "Check": "% Cumulative NaN and Inf and fill and near-zero pixels under threshold?",
+          "Result": "PASS",
+          "Threshold": "",
+          "Actual": "",
+          "Notes": "GCOV_L_A_HHHH backscatter: If a 'FAIL' then all histogram bin counts are zero. This likely indicates that the raster contained no valid data. Note: check performed on decimated raster not full raster."
+        },
+        {
+          "Tool": "QA",
+          "Check": "% Cumulative NaN and Inf and fill and near-zero pixels under threshold?",
+          "Result": "PASS",
+          "Threshold": "",
+          "Actual": "",
+          "Notes": "GCOV_L_A_HVHV backscatter: If a 'FAIL' then all histogram bin counts are zero. This likely indicates that the raster contained no valid data. Note: check performed on decimated raster not full raster."
+        },
+        {
+          "Tool": "QA",
+          "Check": "% Cumulative NaN and Inf and fill and near-zero pixels under threshold?",
+          "Result": "PASS",
+          "Threshold": "",
+          "Actual": "",
+          "Notes": "GCOV_L_B_HHHH backscatter: If a 'FAIL' then all histogram bin counts are zero. This likely indicates that the raster contained no valid data. Note: check performed on decimated raster not full raster."
+        },
+        {
+          "Tool": "QA",
+          "Check": "% Cumulative NaN and Inf and fill and near-zero pixels under threshold?",
+          "Result": "PASS",
+          "Threshold": "",
+          "Actual": "",
+          "Notes": "GCOV_L_B_HVHV backscatter: If a 'FAIL' then all histogram bin counts are zero. This likely indicates that the raster contained no valid data. Note: check performed on decimated raster not full raster."
+        },
+        {
+          "Tool": "QA",
+          "Check": "QA completed with no exceptions?",
+          "Result": "PASS",
+          "Threshold": "",
+          "Actual": "",
+          "Notes": ""
+        }
+      ],
+      "iso_selected_attributes": [
+        [
+          "acquisitionInformation",
+          "look direction",
+          "look direction of the sensor",
+          "string",
+          "Left"
+        ],
+        [
+          "processingInformation",
+          "range bandwidth",
+          "processed range bandwidth - frequency A",
+          "float",
+          "Hz",
+          "40000000.0"
+        ],
+        [
+          "processingInformation",
+          "range bandwidth",
+          "processed range bandwidth - frequency B",
+          "float",
+          "Hz",
+          "5000000.0"
+        ]
+      ],
+      "identification_subtest_causes": "Not established for July granules; do not inherit exact August errors without inspecting authoritative evidence."
+    }
+  ],
+  "reference_catalogs": [
+    {
+      "name": "sentinel1_reference_catalog",
+      "query": {
+        "dataset": "SENTINEL-1",
+        "processingLevel": "GRD_HD",
+        "intersectsWith": "POLYGON((94.55 26.84,94.83 26.84,94.83 27.04,94.55 27.04,94.55 26.84))",
+        "start": "2026-07-20T00:00:00Z",
+        "end": "2026-07-25T23:59:59Z",
+        "maxResults": 15
+      },
+      "count": 1,
+      "records": [
+        {
+          "properties": {
+            "sceneName": "S1D_IW_GRDH_1SDV_20260722T113958_20260722T114023_003786_006CD7_FA7E",
+            "startTime": "2026-07-22T11:39:58Z",
+            "stopTime": "2026-07-22T11:40:23Z",
+            "pathNumber": 70,
+            "frameNumber": 1267,
+            "flightDirection": "ASCENDING",
+            "polarization": "VV+VH",
+            "beamModeType": "IW",
+            "processingLevel": "GRD_HD",
+            "platform": "Sentinel-1D"
+          },
+          "footprint": {
+            "coordinates": [
+              [
+                [
+                  94.906342,
+                  25.584232
+                ],
+                [
+                  97.412781,
+                  26.001886
+                ],
+                [
+                  97.1036,
+                  27.504921
+                ],
+                [
+                  94.562775,
+                  27.08972
+                ],
+                [
+                  94.906342,
+                  25.584232
+                ]
+              ]
+            ],
+            "type": "Polygon"
+          },
+          "coverage": {
+            "B_nazira_sivasagar": {
+              "intersects": true,
+              "covers": false,
+              "search_box_centroid_covered": true
+            },
+            "C_teok_jorhat": {
+              "intersects": false,
+              "covers": false,
+              "search_box_centroid_covered": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "sentinel1_nazira_baseline",
+      "query": {
+        "dataset": "SENTINEL-1",
+        "processingLevel": "GRD_HD",
+        "intersectsWith": "POLYGON((94.55 26.84,94.83 26.84,94.83 27.04,94.55 27.04,94.55 26.84))",
+        "start": "2026-07-08T00:00:00Z",
+        "end": "2026-07-12T23:59:59Z",
+        "maxResults": 15
+      },
+      "count": 1,
+      "records": [
+        {
+          "properties": {
+            "sceneName": "S1D_IW_GRDH_1SDV_20260710T113957_20260710T114022_003611_0066E3_AE4E",
+            "startTime": "2026-07-10T11:39:57Z",
+            "stopTime": "2026-07-10T11:40:22Z",
+            "pathNumber": 70,
+            "frameNumber": 1267,
+            "flightDirection": "ASCENDING",
+            "polarization": "VV+VH",
+            "beamModeType": "IW",
+            "processingLevel": "GRD_HD",
+            "platform": "Sentinel-1D"
+          },
+          "footprint": {
+            "coordinates": [
+              [
+                [
+                  94.906189,
+                  25.583963
+                ],
+                [
+                  97.399536,
+                  25.99959
+                ],
+                [
+                  97.090149,
+                  27.502621
+                ],
+                [
+                  94.562599,
+                  27.089428
+                ],
+                [
+                  94.906189,
+                  25.583963
+                ]
+              ]
+            ],
+            "type": "Polygon"
+          },
+          "coverage": {
+            "B_nazira_sivasagar": {
+              "intersects": true,
+              "covers": false,
+              "search_box_centroid_covered": true
+            },
+            "C_teok_jorhat": {
+              "intersects": false,
+              "covers": false,
+              "search_box_centroid_covered": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "sentinel1_teok_event",
+      "query": {
+        "dataset": "SENTINEL-1",
+        "processingLevel": "GRD_HD",
+        "intersectsWith": "POLYGON((94.27 26.74,94.46 26.74,94.46 26.94,94.27 26.94,94.27 26.74))",
+        "start": "2026-07-20T00:00:00Z",
+        "end": "2026-07-25T23:59:59Z",
+        "maxResults": 15
+      },
+      "count": 0,
+      "records": []
+    }
+  ],
+  "hls_catalogs": [
+    {
+      "query": {
+        "short_name": "HLSL30",
+        "version": "2.0",
+        "bounding_box": "94.27,26.74,94.83,27.04",
+        "temporal": "2026-07-20T00:00:00Z,2026-07-25T23:59:59Z",
+        "page_size": 20
+      },
+      "count": 2,
+      "hits": "2",
+      "records": [
+        {
+          "id": "HLS.L30.T46RFR.2026204T041047.v2.0",
+          "start": "2026-07-23T04:10:47.729Z",
+          "cloud_cover": "97",
+          "polygons": [
+            [
+              "27.0305608 94.0081521 27.018287 95.1146538 28.00887 95.133691 28.0216705 94.0172345 27.0305608 94.0081521"
+            ]
+          ]
+        },
+        {
+          "id": "HLS.L30.T46RFQ.2026204T041047.v2.0",
+          "start": "2026-07-23T04:10:47.729Z",
+          "cloud_cover": "100",
+          "polygons": [
+            [
+              "26.630827 94.0046193 26.4059984 95.1033679 27.1065255 95.1163102 27.1188458 94.0089424 26.630827 94.0046193"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "query": {
+        "short_name": "HLSS30",
+        "version": "2.0",
+        "bounding_box": "94.27,26.74,94.83,27.04",
+        "temporal": "2026-07-20T00:00:00Z,2026-07-25T23:59:59Z",
+        "page_size": 20
+      },
+      "count": 4,
+      "hits": "4",
+      "records": [
+        {
+          "id": "HLS.S30.T46RFR.2026202T041551.v2.0",
+          "start": "2026-07-21T04:30:52.051Z",
+          "cloud_cover": "55",
+          "polygons": [
+            [
+              "27.0305608 94.0081521 27.018287 95.1146538 28.00887 95.133691 28.0216705 94.0172345 27.0305608 94.0081521"
+            ]
+          ]
+        },
+        {
+          "id": "HLS.S30.T46RFQ.2026202T041551.v2.0",
+          "start": "2026-07-21T04:31:06.595Z",
+          "cloud_cover": "66",
+          "polygons": [
+            [
+              "26.1276064 94.0002758 26.1158046 95.0981442 27.1065255 95.1163102 27.1188458 94.0089424 26.1276064 94.0002758"
+            ]
+          ]
+        },
+        {
+          "id": "HLS.S30.T46RFR.2026204T042221.v2.0",
+          "start": "2026-07-23T04:31:08.167Z",
+          "cloud_cover": "95",
+          "polygons": [
+            [
+              "27.0305608 94.0081521 27.018287 95.1146538 28.00887 95.133691 28.0216705 94.0172345 27.0305608 94.0081521"
+            ]
+          ]
+        },
+        {
+          "id": "HLS.S30.T46RFQ.2026204T042221.v2.0",
+          "start": "2026-07-23T04:31:22.696Z",
+          "cloud_cover": "89",
+          "polygons": [
+            [
+              "26.1276064 94.0002758 26.1158046 95.0981442 27.1065255 95.1163102 27.1188458 94.0089424 26.1276064 94.0002758"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "government_report_source": {
+    "index": "https://sdrf.assam.gov.in/dfr/",
+    "form": "https://sdrf.assam.gov.in/dfr/download?type=flood",
+    "retrieval": "Normal public date-selection POST; session/CSRF values omitted. No imagery requested.",
+    "documents": [
+      {
+        "file": "erosion_2026-08-16.pdf",
+        "bytes": 477511,
+        "sha256": "f2cb272cd238834e46baf087cff693369e72cc34d6b88963aabad13c807cc2db"
+      },
+      {
+        "file": "erosion_2026-08-27.pdf",
+        "bytes": 543434,
+        "sha256": "509a661245334fc48b02bfa4e1210ae63011956be0aaaa98f0ac35e0b580867c"
+      },
+      {
+        "file": "flood_2026-07-10.pdf",
+        "bytes": 575138,
+        "sha256": "6c55d84cc4b822e6c7ee232eca058f144a7d02f562a5b4259e655bbebcc04dd8"
+      },
+      {
+        "file": "flood_2026-07-22.pdf",
+        "bytes": 1085861,
+        "sha256": "9d51d00b8269854428b5ce4ff8acd136ce39e89ca8cbb62a8395883773077100"
+      },
+      {
+        "file": "flood_2026-07-23.pdf",
+        "bytes": 1181296,
+        "sha256": "01ba67202d0601c0c55048f3c3327b8780df95aa35300c54135fb569fc6beeb8"
+      },
+      {
+        "file": "flood_2026-08-15.pdf",
+        "bytes": 758264,
+        "sha256": "e1d2c96caa34be37d0ba5e2961b688d2be8e993d72465a3c148de1ccb0cbe646"
+      },
+      {
+        "file": "flood_2026-08-27.pdf",
+        "bytes": 768576,
+        "sha256": "7ac7a298a86ccc97d6edc43759c457d8ac98add3d7342f56aff7675a91a87c3a"
+      }
+    ]
+  },
+  "nisar_sidecar_receipts": [
+    {
+      "scene": "NISAR_L2_PR_GCOV_026_040_A_015_4005_DHDH_A_20260722T230528_20260722T230602_P05023_N_F_J_001",
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_026_040_A_015_4005_DHDH_A_20260722T230528_20260722T230602_P05023_N_F_J_001/NISAR_L2_PR_GCOV_026_040_A_015_4005_DHDH_A_20260722T230528_20260722T230602_P05023_N_F_J_001_QA_SUMMARY.csv",
+      "file": "2026-07-22_qa.csv",
+      "bytes": 1441,
+      "status": 200
+    },
+    {
+      "scene": "NISAR_L2_PR_GCOV_026_040_A_015_4005_DHDH_A_20260722T230528_20260722T230602_P05023_N_F_J_001",
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_026_040_A_015_4005_DHDH_A_20260722T230528_20260722T230602_P05023_N_F_J_001/NISAR_L2_PR_GCOV_026_040_A_015_4005_DHDH_A_20260722T230528_20260722T230602_P05023_N_F_J_001.h5.iso.xml",
+      "file": "2026-07-22_iso.xml",
+      "bytes": 117220,
+      "status": 200
+    },
+    {
+      "scene": "NISAR_L2_PR_GCOV_025_040_A_015_4005_DHDH_A_20260710T230529_20260710T230603_P05023_N_F_J_001",
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_040_A_015_4005_DHDH_A_20260710T230529_20260710T230603_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_040_A_015_4005_DHDH_A_20260710T230529_20260710T230603_P05023_N_F_J_001_QA_SUMMARY.csv",
+      "file": "2026-07-10_qa.csv",
+      "bytes": 1441,
+      "status": 200
+    },
+    {
+      "scene": "NISAR_L2_PR_GCOV_025_040_A_015_4005_DHDH_A_20260710T230529_20260710T230603_P05023_N_F_J_001",
+      "url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_040_A_015_4005_DHDH_A_20260710T230529_20260710T230603_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_040_A_015_4005_DHDH_A_20260710T230529_20260710T230603_P05023_N_F_J_001.h5.iso.xml",
+      "file": "2026-07-10_iso.xml",
+      "bytes": 117215,
+      "status": 200
+    }
+  ],
+  "limitations": [
+    "Catalog footprints do not establish valid-pixel or inundation coverage.",
+    "No new raster, image, thumbnail or HDF5 was requested.",
+    "July acquisition waveform/PRF, pixel grid and exact identification failure causes remain unverified."
+  ]
+}
