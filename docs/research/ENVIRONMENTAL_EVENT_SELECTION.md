@@ -1,5 +1,64 @@
 # AU404 / TerraScope AI — environmental event selection
 
+## Reference provenance and permission checkpoint — October 18, 2026 IST
+
+Continued from clean, verified `afa1733ad8d59a02a78edf35c19c001ee435c2b9`. **Nazira/Bihubor remains the provisional lead; Majuli remains the fallback. Actual Bihubor mapped inundation is still UNVERIFIED.** No imagery, WMS map tiles or new vectors were downloaded, and the previously failing capabilities/metadata requests were not repeated. This checkpoint adds official contacts, a permission distinction and one unsent inquiry; it does not upgrade scientific readiness.
+
+### Documentary findings
+
+Public official-source searches for the exact layer identifier and dated Assam products did not establish a product-specific technical sheet for `flood:as_2026_22_07_18` or `flood:as_2026_23_07_18`. This is a bounded search result, not proof no such documentation exists. The saved viewer labels and extents remain the only verified layer-specific descriptors. The18Hr label cannot supply an exact UTC acquisition or establish whether it denotes observation, processing or release time. Sensor(s), source scenes, native resolution, class codes, minimum mapping unit, treatment of permanent/seasonal water, cloud/no-observation areas and accuracy remain unknown.
+
+[NRSC's September20 Bhuvan overview](https://www.nrsc.gov.in/nrscnew/bhuvan_this_week.php?week=2026-09-20) describes satellite-derived flood services and analysis, with metadata for selected datasets. It does not identify these July layers' inputs or confirm Bihubor flooding. The [official Disaster Services wiki](https://bhuvan.nrsc.gov.in/wiki/index.php/Disaster_Services) links general monitoring services without the missing product metadata.
+
+The [NRSC aggregated-flood technical document](https://bhuvan-app1.nrsc.gov.in/disaster/usrtasks/flood_hz/doc/AggFld_TechDoc.pdf), pp1–3, describes combining extracted water with pre-flood river/water information and using multiple optical/radar missions. Its scope is historical2003–2020 products for seven named states, not July2026 Assam. Its1:250,000 suggested scale is not a resolution for these layers. Do not transfer its sensors, classification, datum or limitations as verified properties of our reference. It does, however, publish the Disaster Management Support Group's official flood contact on p3.
+
+**Actual inundation versus extent:** Bihubor's administrative geometry and provisional envelope fit both viewer extents, but this does not establish the presence of a flood-class feature. No permissible textual site-level result was found. We have not inspected mapped pixel values or polygons and will not imply that a spatial intersection was tested. A dated product-specific confirmation or a permitted reference extract is needed. A map built from the same Sentinel-1 acquisitions would also limit independence of that corroborating source.
+
+### Permission finding and verified contacts
+
+[Bhuvan terms](https://bhuvan.nrsc.gov.in/terms.php) allow portal access/viewing but require prior written authorization for copying, modifying/deriving and publishing/redistributing content, subject also to third-party rights. The general service description supports analysis as a purpose; it is not a layer-specific grant overriding these restrictions. Our practical interpretation is to obtain written clarification before numerical reference extraction, derived statistics/maps, screenshots in a public presentation or reference redistribution. Attribution alone is not established as sufficient. An open-source license on our own repository does not license NRSC material. No blanket prohibition on all research is inferred; the intended uses need explicit terms.
+
+- Primary: **flood@nrsc.gov.in**, Group Head, Disaster Management Support Group, published on p3 of the official technical document linked above. Publicly documented contact, not a tested mailbox or confirmed current layer custodian.
+- CC/routing support: **bhuvan@nrsc.gov.in**, Bhuvan Cell, verified by a successful direct retrieval of the [official contact page](https://bhuvan.nrsc.gov.in/contactus.php). The web reader failed on this page; normal HTTPS retrieval succeeded. No private contact information was sought.
+
+Sources accessed October18,2026 IST. Contact/terms/overview HTML and hash receipts are outside Git under `E:/TerraScope_AI/03_Documentation/nrsc_reference_permission_20261018`. The short technical PDF was read through the web tool; no satellite data were obtained. No failed WMS request was retried, restricted service accessed or email sent.
+
+### One email draft — NOT SENT
+
+**To:** flood@nrsc.gov.in
+**Cc:** bhuvan@nrsc.gov.in
+**Subject:** Assam July22–23,2026 flood layers: Bihubor coverage, provenance and research-use permission
+
+Dear NRSC Disaster Management Support / Bhuvan team,
+
+We are Team AU404, preparing TerraScope AI for NASA Space Apps Challenge2026. We are currently researching data suitability; no competition application or flood classification has been developed.
+
+Your Bhuvan viewer lists `flood:as_2026_22_07_18` and `flood:as_2026_23_07_18`. We are considering Bihubor Grant, Nazira, Sivasagar, Assam (NWDP village code292859), within the provisional WGS84 envelope94.78–94.80°E,26.80–26.84°N. Its inclusion in the layer extents does not establish actual inundation.
+
+Could you please clarify:
+
+1. Each layer's source sensors/scenes, exact acquisition times and timezone, meaning of18Hr, resolution/CRS, flood classes, permanent-water exclusion, no-observation masks and principal accuracy limitations?
+2. Whether either layer actually maps inundation within Bihubor Grant or this envelope, and whether a dated technical sheet or small authorized reference extract is available? Our candidate NISAR observations start July10 at23:05:29UTC and July22 at23:05:28UTC (July23,04:35:28IST for the latter). Were Sentinel-1 observations from July10/22 used in the reference products?
+3. Whether educational, non-commercial comparison with NISAR, derived aggregate statistics, attributed map excerpts/screenshots in a public hackathon presentation, and publication of derived results in our public repository are permitted? Please specify attribution, redistribution restrictions and any required written authorization; we would not redistribute source layers without permission.
+
+The listed WMS capabilities request returned an out-of-sync configuration error, and the linked Assam2026 metadata table was empty. Please route this inquiry to the appropriate product team if necessary.
+
+Thank you,
+Team AU404 — TerraScope AI
+
+### Exact remaining blockers and stop condition
+
+1. NRSC product provenance: sensors/source scenes, exact observation time, resolution, masks/classes and error characteristics.
+2. Actual dated inundation within Bihubor; administrative damage and overall layer bounds are insufficient. Baseline dryness remains unverified.
+3. Written terms covering the intended analytical, derived-result and public-presentation uses; reference-source independence also needs confirmation.
+4. Later, separately authorized July NISAR pixel QA, banding/calibration and physical registration checks. No July raster validation is implied by catalog matching.
+5. Organizer clarification on prepared-data reuse and authorized start; manual review of the expected October28 complete challenge statement when actually published. Release alone does not authorize implementation or settle NRSC rights.
+
+**Stop here pending an external response or the scheduled manual challenge review.** The owner may review/send the draft; it has not been sent and no background monitoring is configured. Do not repeat metadata failures, finalize the AOI, acquire imagery or build competition features while these gates remain unresolved. Explicit build authorization is still required.
+
+---
+
+
 ## 0. Superseding locality and reference verification — October 18, 2026 IST
 
 **Recommendation: continue with Nazira as the provisional lead, focusing the next evidence check on Bihubor Grant. Preserve Majuli as fallback. Do not finalize a flood AOI or download imagery yet.** Starting commit: `11c8d89c414969f50678dcb645753ca27bc37daa`. The following findings supersede earlier statements that no July official map listing or affected-locality geometry had been found. Earlier scores remain historical research-priority judgments, not recalculated confidence or validation metrics.

@@ -1,3 +1,11 @@
+## Latest NRSC reference/permission checkpoint — October18,2026 IST
+
+Continued from verified afa1733; see the new opening checkpoint in [ENVIRONMENTAL_EVENT_SELECTION](research/ENVIRONMENTAL_EVENT_SELECTION.md). Official flood contact flood@nrsc.gov.in verified in NRSC's aggregated-flood technical document, p3; Bhuvan contact bhuvan@nrsc.gov.in verified directly. One concise email is drafted in that report and **NOT SENT**. No product-specific July22/23 sensor/time/resolution/classes or actual Bihubor inundation established. General analysis-oriented descriptions do not establish permission for derived work/public redistribution under Bhuvan terms. Request explicit scope and attribution; do not treat repository Apache-2.0 as licensing NRSC content.
+
+Nazira/Bihubor remains provisional; Majuli fallback. CONDITIONALLY_READY / July CATALOG_MATCHED_NOT_RASTER_VALIDATED unchanged. No failed services retried, imagery downloaded, original altered or competition code built. New source HTML/hash receipts: E:/TerraScope_AI/03_Documentation/nrsc_reference_permission_20261018. Only research report and this handoff changed. Final verified commit recorded externally after push.
+
+STOP pending owner-sent inquiry/external response or manual October28 challenge review. No email sent or monitoring configured. Remaining gates: actual local inundation/provenance, analytical/presentation permissions and independence, later authorized July pixel QA, organizer reuse/start ruling and explicit build phrase. Challenge release alone does not authorize implementation.
+
 ## Latest locality/reference verification — October 18, 2026 IST
 
 Continued from verified public main11c8d89. Read section0 of [ENVIRONMENTAL_EVENT_SELECTION](research/ENVIRONMENTAL_EVENT_SELECTION.md), which supersedes earlier missing-map/missing-location findings. Exact NWDP boundary matches for Bihubor Grant292859, Maduri Gohain292892 and Moran Gaon292847 are inside both July NISAR and both identified Sentinel-1 footprints. Bihubor/Moran lie south of the old discovery box. Provisional Bihubor research envelope: POLYGON((94.78 26.80,94.80 26.80,94.80 26.84,94.78 26.84,94.78 26.80)), WGS84. This is not a flood boundary or finalized AOI.
