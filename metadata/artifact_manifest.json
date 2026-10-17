@@ -1,0 +1,35 @@
+{
+  "imagery_bytes": 0,
+  "artifacts": [
+    {
+      "path": "01_NASA_Data_Exploration\\metadata\\access_probe.json",
+      "bytes": 725,
+      "sha256": "9b65b2f7565ee9e685becf40c97b7ac9502464576f313d97b3d14d8615d3a27d"
+    },
+    {
+      "path": "01_NASA_Data_Exploration\\metadata\\august_catalog.json",
+      "bytes": 73549,
+      "sha256": "2c994994af0de21e1986d50979ca28a1b2989d3a2b745a037d7fbfb8af7721ce"
+    },
+    {
+      "path": "01_NASA_Data_Exploration\\metadata\\cmr_crosscheck.json",
+      "bytes": 113954,
+      "sha256": "d22753f7f85ede464c1db357c3650b80c8d620d9da800f496e59fed215afaa51"
+    },
+    {
+      "path": "01_NASA_Data_Exploration\\metadata\\range_probe.json",
+      "bytes": 135,
+      "sha256": "d952b9febf926e282952268bb4ed9c5aada8582947a980af25dfc2d5c46a1aa1"
+    },
+    {
+      "path": "01_NASA_Data_Exploration\\scene_inventory\\scene_inventory.csv",
+      "bytes": 1823,
+      "sha256": "d7891cbae2020df2baa02fb006fef21e41ba34b786cb69f43c81bc923c6c1db5"
+    },
+    {
+      "path": "01_NASA_Data_Exploration\\scene_inventory\\scene_inventory.json",
+      "bytes": 5283,
+      "sha256": "fe6de15aafed160aa36cd1bf312e620b50a6f4a1b968fd736582358446047a75"
+    }
+  ]
+}

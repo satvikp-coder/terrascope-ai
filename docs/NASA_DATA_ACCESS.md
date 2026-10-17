@@ -11,3 +11,9 @@ Remote sequence, not yet completed: obtain authoritative URL; inspect gdalinfo /
 Use bounded cache, one process, timeouts, and monitor bytes. HDF5 range reads can greatly exceed crop size. Stop on unexpected excessive reads; ask before operations expected to exceed 1 GB or take substantial time. Never fallback to a full HDF5 download without permission.
 
 Official guides: https://nisar-docs.asf.alaska.edu/asf-search/ ; https://docs.asf.alaska.edu/asf_search/searching/ ; https://nisar-docs.asf.alaska.edu/gdal/ ; https://nisar-docs.asf.alaska.edu/access-overview/
+
+## Completed catalog reproduction
+
+From PowerShell, invoke E:/TerraScope_AI/tools/asf-env/Scripts/python.exe E:/TerraScope_AI/tools/search_metadata.py with --wkt 'POLYGON((94.05 26.82,94.42 26.82,94.42 27.13,94.05 27.13,94.05 26.82))' --start 2026-08-14T00:00:00Z --end 2026-08-29T00:00:00Z --output PATH_ON_E_DRIVE. Expected recorded result is 3 catalog entries, subject to later archive changes. The script is a local learning artifact and not distributed as submission source. Package versions are recorded alongside this guide.
+
+Auth checkpoint: a restricted placeholder .netrc now exists; user must replace placeholders privately. Unauthenticated tiny GET returned HTTP 401 with zero imagery body bytes. A preceding HEAD returned 200 and must not be mistaken for verified auth.

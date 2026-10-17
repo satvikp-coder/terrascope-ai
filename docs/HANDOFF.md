@@ -8,6 +8,8 @@ User designated E: (500 GB), overriding the earlier 1 TB estimate. Existing QGIS
 
 No actual competition app, analysis algorithm, model, frontend or backend exists. Future architecture and event schedule are plans only. Do not copy exploratory code into submission work where prohibited. Require official local start verification AND user text START TERRASCOPE AI HACKATHON BUILD before any competition build.
 
-Pending user action: private user-profile .netrc configuration and identification of official local event. Do not ask for passwords in chat. No successful auth or raster read should be inferred from environment setup.
+Pending user action: fill the private user-profile .netrc template (placeholder only; not authenticated) and identification of official local event. Do not ask for passwords in chat. No successful auth or raster read should be inferred from environment setup.
 
 After each phase record facts and blockers, audit lightweight staged files and commit/push as authorized. Determine current successful commit with git log and verify it against GitHub; a tracked document cannot contain its own final commit hash.
+
+Catalog phase completed: 3 results, requested track 40/frame 15 pair confirmed in metadata only. Tiny unauthenticated Range GET returned 401; do not proceed with raster access until auth works. External last_verified_commit.txt records the final verified GitHub hash.
