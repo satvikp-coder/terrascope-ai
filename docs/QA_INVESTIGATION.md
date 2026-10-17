@@ -69,3 +69,9 @@ Local generic learning utilities in `E:/TerraScope_AI/tools`: investigate_identi
 - [ASF GCOV guide](https://nisar-docs.asf.alaska.edu/gcov/) and [remote GDAL guide](https://nisar-docs.asf.alaska.edu/gdal/).
 
 No imagery, credentials, cookies, signed URLs or sensitive configuration is included in this Git update. Official event start plus explicit START TERRASCOPE AI HACKATHON BUILD authorization remain mandatory before competition development.
+
+## Final full-AOI audit update
+
+The later full-AOI audit supersedes sparse-only coverage statements above. Both complete crop masks are all 1; exceptions all 0; numberOfLooks all finite/positive. Exact AOI shared mask-qualified coverage is 12,611,824 pixels (100%). Independent pixel-center AOI raster confirms 251,466 exterior crop pixels. The full factor layer was not reread; no normalization conversion was needed. See FINAL_DATA_READINESS.md for counts, storage and remaining scientific limits.
+
+Official isce3 issue #202 documents the same upstream LSAR naming mismatch and missing observation-mode metadata. It supports a producer/convention explanation but remains open and does not resolve the exact August granules or their placeholder mode. The P05023 joint-mode 40 MHz radiometric-banding caveat applies to this acquisition configuration. Dataset status remains CONDITIONALLY_READY; no source metadata was corrected. A support question is drafted, not sent.
