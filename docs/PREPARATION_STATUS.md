@@ -33,3 +33,6 @@ Satellite imagery downloaded: 0 bytes; raster outputs: none. Full-scene download
 3. Inspect remote metadata with configured QGIS GDAL, tiny crop and validation, then only two AOI crops if resources are acceptable. Ask before expected >1 GB transfer or significant processing.
 4. Record units/grid/calibration/quality and comparison readiness; update docs and Git.
 5. Recheck full challenge resources and local rules before event. Build only after verified start AND explicit START TERRASCOPE AI HACKATHON BUILD.
+
+Authentication follow-up: user reported editing .netrc. A safe structural check found extra entries on both login/password lines; file parsing failed before any network authentication attempt. Credentials were not modified. User asked to correct the three-field format privately. Future checks must catch parser exceptions without logging their text because parser errors can include input tokens.
+
