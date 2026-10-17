@@ -33,3 +33,31 @@ All five earlier commits expose the configured personal author/committer email; 
 2. User may send ASF_SUPPORT_QUESTION.md; no automated contact authorized.
 3. Research/verify independent reference dates and geometry/noise requirements before later analysis; no bulk queues.
 4. Verify registered local event/start/timezone and current challenge resources. Actual development requires official start AND exact START TERRASCOPE AI HACKATHON BUILD authorization.
+
+## October 18 maximum-permitted preparation review
+
+Baseline verified clean main caeee8bf4ebffeae712c902fa703182dc4f0eb3a; repository PRIVATE. Access date 2026-10-18 IST, initial clock 2026-10-17 20:55:28 UTC. This section supersedes older schedule/eligibility interpretations, not historical science measurements.
+
+Completed: actual official terms, global FAQ, homepage, Ahmedabad/Santiago/Universal and current challenge content read; compliance/source matrix, unsent Ahmedabad clarification, full-statement review gate, nine-citation evidence-limited literature review, reference catalog, open questions, skills, architecture/evaluation/performance plans, team/workflow, privacy proposal, risk/backlog/submission/AI responsibility and readiness matrix written. Existing license/attribution/data reports retained.
+
+New global finding: FAQ explicitly prohibits pre-event challenge work and requires disclosure of AI use during event. This is global guidance independently of Santiago's local rule; no equivalent clause was found in legal terms. Prior project-specific crops/masks/external utilities are preserved and frozen pending authoritative reuse clarification. No competition feature was built.
+
+New metadata-only evidence: HLS L30 v2.0 query returned four August16 intersecting tiles, 87–99% catalog cloud; S30 returned four records August15/20/25, 73–100% cloud. No August27 HLS record returned in that bounded query. Actual usable AOI optical pixels and flood event remain unverified. No imagery downloaded, no new GDAL remote reads, no full HDF5 or additional raster output, no original modifications.
+
+Environment audit: i7-1355U, 16,849,256,448 RAM bytes; USB Hitachi NTFS E: 500,105,736,192 bytes, 499,667,353,600 free at audit. Reused Python3.13/asf_search14.1/h5py3.16 and QGIS GDAL3.13.3 environment. No package installation, paid resource, benchmark or deployment. Human skills/roster not verified.
+
+Science unchanged: exact AOI 12,611,824 centers, 251,466 crop centers outside; both masks100% qualified/zero exceptions; noise/banding/geometry/registration and metadata limitations unresolved. CONDITIONALLY_READY is not flood validation or submission eligibility.
+
+Blocked/owner actions: send reviewed draft to ecell.nu@nirmauni.ac.in; obtain Ahmedabad start/deadline and prepared-artifact ruling; confirm registration/roles; find dated event/reference evidence; decide historical email privacy before publication. October28 full statement and November13 guides require future manual review. No organization contacted, registration changed, collaborator added, history rewritten or visibility changed.
+
+Current external workspace E:/TerraScope_AI; GitHub https://github.com/satvikp-coder/terrascope-ai remains PRIVATE. Last successful preparation commit and final audit evidence are recorded in the verification section and E:/TerraScope_AI/00_Project_Management/handoff/last_verified_commit.txt after push. No self-referential final commit is embedded in its own content.
+
+Next recommended action: owner reviews/sends Ahmedabad clarification; independent documentary research may continue while waiting. Actual implementation requires verified official start + applicable permission + START TERRASCOPE AI HACKATHON BUILD.
+
+## Verified preparation checks, October 18
+
+Working tree review: 54 lightweight files, 71 relative Markdown links checked, no missing targets or known credential/token/data-signature findings at this checkpoint. Original AOI rasters and tiny sample match their recorded SHA256 and exact byte counts. GitHub preparation labels, two milestones and five planning/blocker issues are organized on the private repository; these do not authorize implementation. Full-history audit and remote SHA verification follow the documentation commit.
+
+## Superseding owner instruction ? October 18
+
+After the preparation/privacy review, the owner explicitly requested public visibility. Preserve existing history, including the five personal-author-email commits; do not rewrite or force-push. Earlier private-only instructions in this document describe the prior state and are superseded for this publication action. Complete the fresh object scan, push safe documentation, change visibility and verify anonymously. The final verified visibility/commit receipt is recorded in the external handoff directory; never assume success from this plan alone. Competition implementation remains gated and unbuilt.

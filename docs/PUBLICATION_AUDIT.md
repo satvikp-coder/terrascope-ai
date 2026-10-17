@@ -55,3 +55,11 @@ Agency names are used for attribution, without endorsement or agency logos. The 
 Publication approval does not authorize competition development. The build gate remains verified official local start AND explicit `START TERRASCOPE AI HACKATHON BUILD`.
 
 External detailed evidence: E:/TerraScope_AI/00_Project_Management/publication_audit/git_history_audit.json. No credentials or personal email values are stored in that report. Final verified commit is recorded in the external handoff directory after the private documentation push.
+
+## October 18 refreshed audit and owner visibility instruction
+
+The owner subsequently instructed: make the repo public. This supersedes the earlier visibility hold. Publication will preserve existing history, including the five original personal-author-email commits; no rewrite/force push is authorized or performed. Historical pending-confirmation text above is retained as the earlier decision record.
+
+Before the new documentation commit, all six baseline commits / 70 objects / 50 blobs were rescanned with zero secret/data findings; five personal-email commits remain. The current 54-file tree passed known-Earthdata-value, token/signature, size and relative-link checks. Three original raster checksums and exact sizes remain unchanged. Public organizer/support addresses are allowlisted after official-source verification; private email values are not printed. Final post-commit full-history results and visibility/remote receipts are retained outside Git under 00_Project_Management/publication_audit and handoff.
+
+Original Apache-2.0/LICENSE/NOTICE and third-party notices remain; no third-party source or imagery was added. New material is original research notes, attributed citations, lightweight public catalog metadata and documentation templates. Future contributor/content rights still require review. No competition application was implemented.

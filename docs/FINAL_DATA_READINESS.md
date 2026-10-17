@@ -74,3 +74,9 @@ New raster outputs total 115,770 bytes. Full quality operations requested 247,46
 Reproduction utilities remain outside Git: create_exact_aoi_mask.py, full_quality_audit.py, guard_full_quality.py and summarize_full_quality.py. Cached completed masks are reused; current scientific originals must not be overwritten. No additional heavy environment was installed. All Git changes are documentation/license materials only.
 
 Sources: [GCOV specification Rev F, version 1.5.0](https://cumulus.asf.earthdatacloud.nasa.gov/PUBLIC/DATA/NISAR/NISAR_D-102274_RevF_NASA_SDS_Product_Specification_L2_GCOV_w-esigs.pdf), section 4.3.3 and dataset tables; [GDAL access guide](https://nisar-docs.asf.alaska.edu/gdal/); [QA v17.0.0 source](https://github.com/isce-framework/nisarqa/blob/v17.0.0/src/nisarqa/validate/sanity_checks.py). Research preparation only: official local event start plus explicit build authorization remain required.
+
+## October 18 review — no new raster work
+
+Existing scientific evidence is retained; assessment remains CONDITIONALLY_READY. Official provisional issues and isce3 issue 202 were reviewed without identifying a granule-specific resolution. Full-AOI mask coverage is not radiometric/flood validation. See [open questions](research/OPEN_SCIENTIFIC_QUESTIONS.md) and [evaluation plan](planning/SCIENTIFIC_EVALUATION_PLAN.md).
+
+Global FAQ now independently confirms the early challenge-work restriction. Existing project-specific crops, masks and external utilities are frozen pending organizer clarification of reuse. This document preserves historical work; its reproduction steps do not authorize running additional project-specific preparation or reusing it in a submission. See [rules](COMPETITION_RULES_AND_BOUNDARIES.md).

@@ -22,3 +22,9 @@ Prefer alternative observations if this pair lacks a documented event transition
 - P3: add visualization and interpretation only for measured results; finish reproducibility, attribution and submission review.
 
 Sources: [ASF provisional known issues](https://nisar-docs.asf.alaska.edu/provisional-known-issues/), [NASA flood-product caveats](https://forum.earthdata.nasa.gov/viewtopic.php?t=7707), [NASA ARSET SAR flood training](https://disasters.nasa.gov/sites/default/files/2023-11/SAR_Part3.pdf), [NASA validation example](https://ntrs.nasa.gov/api/citations/20230017488/downloads/AGU2023%20Flood.pdf). Reference availability, timing and licenses must be checked; no event-level scientific conclusion is implied by these links.
+
+## October 18 review — no new raster work
+
+Existing scientific evidence is retained; assessment remains CONDITIONALLY_READY. Official provisional issues and isce3 issue 202 were reviewed without identifying a granule-specific resolution. Full-AOI mask coverage is not radiometric/flood validation. See [open questions](research/OPEN_SCIENTIFIC_QUESTIONS.md) and [evaluation plan](planning/SCIENTIFIC_EVALUATION_PLAN.md).
+
+Global FAQ now independently confirms the early challenge-work restriction. Existing project-specific crops, masks and external utilities are frozen pending organizer clarification of reuse. This document preserves historical work; its reproduction steps do not authorize running additional project-specific preparation or reusing it in a submission. See [rules](COMPETITION_RULES_AND_BOUNDARIES.md).

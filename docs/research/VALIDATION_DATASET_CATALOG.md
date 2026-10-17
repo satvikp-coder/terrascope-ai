@@ -1,0 +1,32 @@
+# Candidate validation datasets — ranked research, no imagery acquired
+
+Reviewed 2026-10-18. Ranking weighs independence, timing, feasibility and cost, not measured accuracy. All candidates cover or potentially cover Assam; exact valid AOI coverage must be demonstrated. No bulk data was downloaded. Availability is distinct from usability.
+
+| Rank / candidate | Official source; resolution/format | Dates and geographic coverage | Access / rights / cost | Potential role and limitation |
+|---|---|---|---|---|
+| 1. Official flood bulletins / maps | [ASDMA flood reports](https://asdma.assam.gov.in/information-services/detail/assam-flood-report), [NRSC NDEM](https://ndem.nrsc.gov.in/); administrative reports/PDF/maps, scale variable | Assam/India; date-specific August 2026 evidence not verified | Public report access; map/services may require registration; redistribution terms must be checked; no purchase | Establish event context; district counts are not pixel ground truth and map source SAR may not be independent |
+| 2. HLS L30/S30 v2 | [NASA HLS](https://hls.gsfc.nasa.gov/data-access-and-tools/), 30 m COG and Fmask | Global land; bounded CMR query verified dates below | Earthdata for NASA downloads, open NASA access with attribution; $0 data | Optical corroboration if clear; cloud/shadow, mixed pixels, timing and shared source dependence matter |
+| 3. Sentinel-1 GRD / RTC | [ESA S1 products](https://sentiwiki.copernicus.eu/web/s1-products), [ASF](https://asf.alaska.edu/); C-band, native resolution and spacing depend on product, commonly 10 m sampled IW GRD; SAFE/GeoTIFF | Broad land coverage; exact same-track acquisitions near both dates not yet queried/verified | Copernicus/ASF accounts as required; free/open with source-specific terms | Different sensor corroboration, not independent physical flood truth; orbit/polarization/incidence/normalization differ |
+| 4. Landsat Collection 2 Level 2 | [USGS](https://www.usgs.gov/landsat-missions/landsat-collection-2-level-2-science-products); 30 m multispectral COG + QA | Global archive; native scenes near dates not separately verified; L30 is derived Landsat evidence | EarthExplorer/Earthdata method dependent, no-cost USGS data with citation | Cloud-free surface-water reference; do not count Landsat and its HLS derivative as independent validations |
+| 5. Sentinel-2 Level 2A | [Copernicus](https://sentiwiki.copernicus.eu/web/s2-products); 10/20/60 m bands, JP2/SAFE | Assam within coverage; native date usability unverified; S30 catalog candidates below | Copernicus account for some access; free/open terms and attribution | Higher-detail optical evidence, cloud/shadow/vegetation limitations; HLS S30 is not independent of S2 |
+| 6. JRC Global Surface Water v1.5 | [Official access/license](https://global-surface-water.appspot.com/download); 30 m GeoTIFF/history | 1984–2024 extension published October 15, 2026; not 2026 event coverage | Free without use restriction under stated Copernicus terms; cite paper/data and EC JRC/Google | Permanent/seasonal baseline; collection transition introduces spatial offsets; latest extensions not validated identically to original paper |
+| 7. NASA GPM IMERG | [NASA IMERG](https://gpm.nasa.gov/data/imerg); ~0.1 degree, half-hourly native products, HDF5/netCDF | Near-global precipitation; exact August granules/product run not checked | Earthdata as required, NASA open access; no-cost | Rainfall context only; coarse rainfall is neither river-stage evidence nor a flood polygon |
+| 8. Elevation | [Copernicus DEM](https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM), ~30/90 m GeoTIFF; NASADEM alternative | Historical global surface/elevation coverage; not a contemporaneous observation | Free access subject to product license/attribution; account may be required | Geometry/plausibility context; surface bias, vegetation, vertical datum and small floodplain gradients limit inference |
+| 9. Historical flood database | [Tellman et al. DOI](https://doi.org/10.1038/s41586-021-03695-w); MODIS-scale historical maps | Historical event archive, not verified August 2026 labels | Verify dataset-specific license/download conditions before reuse | Benchmark/context only; coarse historical maps cannot validate these dates |
+
+## New metadata-only availability check
+
+NASA CMR `/search/granules.json`, version 2.0, bbox `94.05,26.82,94.42,27.13`, UTC interval August 14–29, page_size 20: **4 HLSL30 and 4 HLSS30 records**, all returned (no pagination truncation). Query/IDs/times are preserved in [catalog evidence](../metadata/hls_catalog_check.json). No imagery or thumbnail requested.
+
+- L30: four intersecting tiles from August 16 04:11 UTC, tile-level catalog cloud cover 87–99%.
+- S30: August 15 ~04:30 UTC tiles RFR/RER (73/89% cloud); August 20 RER and August 25 RFQ each 100% cloud.
+- No August 27 acquisition was returned in this specific HLS query. This is not proof that all optical sources lack observations.
+- Footprint intersection does not establish whole-AOI or cloud-free coverage. Tile cloud percentages do not measure AOI cloud. Optical candidates are therefore weak until pixel QA is checked during authorized analysis.
+
+## Flood evidence status
+
+Official ASDMA index and Majuli district records were examined; targeted official-domain August 2026/Majuli searches did not establish a dated flood event or reference polygon spanning the NISAR pair. This is **absence of verified evidence in this review**, not proof no flood occurred. Search results are incomplete and government archives may require manual navigation. Ask a teammate to retrieve dated district/river-gauge bulletins and map provenance; do not manufacture labels or infer flooding from monsoon season.
+
+## Acquisition strategy and gate
+
+Research metadata now; obtain organizer clearance before project-specific reference preprocessing/reuse. During authorized work, prioritize one dated official event record plus the smallest clear optical subset if available. A few cropped bands/QA layers would likely require tens to a few hundred MB depending on footprint/compression; unmeasured estimate only. Range-read overhead can be larger. Approve expected transfers >1 GB before starting; use E: and avoid full HDF5 scenes. If no trustworthy event/reference evidence exists, present surface-change exploration without flood claims or select alternative dates only with documented justification.

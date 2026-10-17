@@ -17,3 +17,9 @@ The exact projected AOI lies inside the crops, but 251,466 crop pixel centres li
 ## Full-AOI audit supersedes sparse coverage limitation
 
 Complete validity and exception masks now cover both entire crops: all valid subswath 1, zero exceptions, no fill/unknown values. Complete numberOfLooks layers are finite/positive, with minima near 0.092 and maxima near 8.519; no universal quality threshold was imposed. This removes the uncertainty about unsampled validity/exception codes, but not shadow/layover, residual noise, RFI, radiometric banding, physical co-registration or event attribution. The directly relevant P05023 joint-mode 40 MHz banding caveat remains. Pixel-center AOI coverage is independently verified, and originals remain unchanged. See FINAL_DATA_READINESS.md and FUTURE_SCIENTIFIC_VALIDATION.md.
+
+## October 18 review — no new raster work
+
+Existing scientific evidence is retained; assessment remains CONDITIONALLY_READY. Official provisional issues and isce3 issue 202 were reviewed without identifying a granule-specific resolution. Full-AOI mask coverage is not radiometric/flood validation. See [open questions](research/OPEN_SCIENTIFIC_QUESTIONS.md) and [evaluation plan](planning/SCIENTIFIC_EVALUATION_PLAN.md).
+
+Global FAQ now independently confirms the early challenge-work restriction. Existing project-specific crops, masks and external utilities are frozen pending organizer clarification of reuse. This document preserves historical work; its reproduction steps do not authorize running additional project-specific preparation or reusing it in a submission. See [rules](COMPETITION_RULES_AND_BOUNDARIES.md).
